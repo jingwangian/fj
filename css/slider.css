@@ -30,19 +30,22 @@ div.slider_right_angle{
 	
 }
 
-div.slider_fixed_box{
+div.slider_fixed_box_png{
+	position: absolute;
+	top: 40px;
+	left: 90px;
+}
+
+div.slider_fixed_box_text{
 	position: absolute;
 	top: 50px;
 	left: 100px;
-	background: red;
-
 }
 
 div.slider_changed_box{
 	position: absolute;
 	top: 10px;
 	left: 300px;
-/*	background: yellow;*/
 	max-width:1200px; 
 	height: 300px;
 
