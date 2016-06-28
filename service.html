@@ -3,97 +3,300 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/w3c.css">
-<link type="text/css" rel="stylesheet" href="css/t1.css">
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<link type="text/css" rel="stylesheet" href="css/nav_part.css">
+<link type="text/css" rel="stylesheet" href="css/service_part.css">
 
 </head>
 <body>
-<div id="frame">
 
-    <nav id="navigation">
-        <ul>
-            <li class="selected"><a href="">service</a></li>
-            <li><a href="">support</a></li>
-            <li><a href="">training</a></li>
-            <li><a href="">product</a></li>
-            <li><a href="">solution</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-    </nav>
+
+<div class="top_nav" style="position:fixed; width=100%;">
+	<ul class="top_nav_ul">
+		<li class="top_nav_li top_nav_left_log" style="margin-left:30px;">
+		<img id="img_nav_left_png" src="img/fujitsu.svg" alt="">
+		</li>
+	  <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>	
+	  <li class="top_nav_li nav_menu"><a href="service.html">SERVICE</a></li>
+	  <li class="top_nav_li nav_menu"><a href="#news">SPPORT</a></li>
+	  <li class="top_nav_li nav_menu"><a href="#contact">TRAINING</a></li>
+	  <li class="top_nav_li nav_menu"><a href="#news">PRODUCT</a></li>
+	  <li class="top_nav_li nav_menu"><a href="#contact">SULOTION</a></li>
+	  <li class="top_nav_li nav_menu"><a href="#contact">CONTACT</a></li>
+	  <li class="top_nav_li">
+	  	<img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:10px; "></img>
+	  	
+	  	</li>
+	  <li class="top_nav_li nav_menu"><a href="#contact">+61 2 9454 9191</a></li>
+	  <li class="top_nav_li top_nav_right_log" style="margin-right:30px;">
+	  	<img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="">
+	  	</li>
+	</ul>
+</div>
+
+    <div class="top_nav" style="position:static;">
+    </div>
     
     <div class="slider_container">
         <img class="mySlides" src="img/img_nature_wide.jpg" style="width:100%">
     </div>
-
-    <div id="main">
-<!--        <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" style="width:200px;" id="mySidenav">-->
-        <div id="service_left_nav" style="width:200px;">
-        <ul>
-            <li><a href="">support</a></li>
-            <li><a href="">training</a></li>
-            <li><a href="">product</a></li>
-            <li><a href="">solution</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-
-        </div>
     
-        <div class="service-main" style="margin-left:200px; float:left;">
+	<div class="service_frame">
+	   <div class="left_nav">
+		   	<ul class="left_nav_ul">
+				<li class="left_nav_li"><a href="#migration">Migration</a></li>
+				<li class="left_nav_li"><a href="#healthcheck">Health Check</a></li>
+				<li class="left_nav_li"><a href="#bencheck">Bench Check</a></li>
+				<li class="left_nav_li"><a href="#operationsreview">Operation review</a></li>
+				<li class="left_nav_li"><a href="#consulting">Consulting</a></li>
+		   	</ul>
+	   </div>
+	   <div class="service_frame_main">
+<div class="content">
+                                        <h3>Fujitsu offers an extensive range of PostgreSQL services:</h3>
+                                        <ul>
+                                            <li>
+                                                <p>Combined services, support and training packages</p>
+                                            </li>
+                                            <li>
+                                                <p>Installation and configuration of PostgreSQL databases</p>
+                                            </li>
+                                            <li>
+                                                <p>Startup and ongoing tuning of the databases</p>
+                                            </li>
+                                            <li>
+                                                <p>Capacity management, risk assessment and secure DB implementation</p>
+                                            </li>
+                                            <li>
+                                                <p>Health check services for mature databases</p>
+                                            </li>
+                                            <li>
+                                                <p>Backup and disaster recovery planning and implementation</p>
+                                            </li>
+                                            <li>
+                                                <p> High-availability database design and implementation</p>
+                                            </li>
+                                            <li>
+                                                <p>Migration services from other proprietary databases</p>
+                                            </li>
+                                            <li>
+                                                <p>Support also includes PostgreSQL tools such as pgpool-II, Slony and rubyrep</p>
+                                            </li>
+                                        </ul>
+                                        <hr class="style-one">
+                                        <div id="migration">
+                                            <div class="service-indicator">
+                                                <h2>Migration</h2></div>
 
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
+                                            <div class="shift"><h3>Discover how to reduce your database TCO by 80% or more</h3>
+                                            <p>Need to lower the ever-rising cost of your database license fees?</p>
+                                            <p>Don't like being locked in to a single vendor? </p>
+                                            <p>Looking for an enterprise and cost-effective database solution?</p>
+                                            <p>Fujitsu can help you identify significant cost saving opportunities compared to leading vendor renewals alone.</p>
+                                            <div id="line"><img src="images/Group 5.png" alt="migration"></div>
+                                            <h3>Migration assessment</h3>
+                                            <p>Fujitsu provides a database migration assessment where we analyze your existing database environment, assessing the infrastructure, schema and applications. Fujitsu’s consultant with the help of our migration assessment tools can evaluate the development effort for migration. A migration road map will be provided to ensure smooth and effective end-to-end database migration to PostgreSQL or FUJITSU Enterprise Postgres. </p>
+                                            <p>Fujitsu can evaluate all major databases and advise alternatives that offer the same reliability and performance at a significantly lower total cost of ownership.</p>
+                                            <p>Simply provide the relevant information and an experienced consultant will use our migration tools to provide you a detailed report, specifying exactly what changes would be required to migrate your database, what the migration will cost, and how much you can save.
+                                            </p>
+                                            <h3>Our migration services
+                </h3>
+                                            <p>Fujitsu provides a full range of migration services, and can assist in all the key steps of the migration process:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p> Migration assessment
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Migration strategy
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>Migration of the database schema</p>
+                                                </li>
+                                                <li>
+                                                    <p> Migration of the data
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Verification
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <p>With Fujitsu’s expert migration capability, the journey to a lower-cost, enterprise database solution has never been easier.</p>
+                                            <p><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                                            </p></div>
+                                            <hr class="style-one">
+                                        </div>
+                                        <div id="healthcheck">
+                                            <div class="service-indicator">
+                                                <h2>Health Check</h2></div>
+                                           <div class="shift"> <h3>Is your PostgreSQL database performing at its best?</h3>
+                                            <p>We all know the benefits of getting our own health checked (even though it is something we often neglect).</p>
+                                            <p>Similarly, how "healthy" is your PostgreSQL database? Has the performance of your PostgreSQL database degraded over time?</p>
+                                            <h4><strong>Why is a health check a good idea?</strong></h4>
+                                            <p>A PostgreSQL health check identifies potential issues in performance with the added benefit of producing a set of "best practice" guidelines for PostgreSQL operation.
+                                            </p>
+                                            <p>Data increases over time
+                                            </p>
+                                            <p>&nbsp;&nbsp;Your hardware may not be fully utilized
+                                            </p>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Your hardware may no longer be suitable
+                                            </p>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your database may not be optimally tuned
+                                            </p>
+                                            <p>These and many other factors can affect the health of your system.
+                                            </p>
+                                            <h4><strong>What does a health check include?</strong>
+                </h4>
+                                            <p>We understand that every system is different and accordingly, we tailor the health check to your specific configuration and requirements.
+                                            </p>
+                                            <p>A health check comprises:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>Evaluation of the operating system configuration. This includes I/O scheduling, memory and buffer/cache, security and network tuning.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Analysis of the PostgreSQL setup. This includes postgresql.conf evaluation and tuning, feasibility evaluation for upgrading to the latest version of PostgreSQL, audit of PostgreSQL memory use and suitability of the existing hardware configuration.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>Storage infrastructure recommendations. This determines whether storage configuration upgrades (such as using a different RAID level or purchasing SAN hardware) would enhance performance and provide a benefit for the client.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <p>And of course we can help you implement the recommendations laid out in the health check.
+                                            </p>
+                                            <p><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                                            </p>
+                                        </div>
+                                    </div>                                        <hr class="style-one">
+                                        <div id="benchcheck">
+                                            <div class="service-indicator">
+                                                <h2>Bench Check</h2></div>
+                                            <h3>Is your infrastructure letting you down?
+                </h3>
+                                            <h4><strong>Has your application outgrown its current infrastructure?
+                </strong></h4>
+                                            <p>Our support team can help benchmark potential hardware upgrades and architectures to find the solution that provides the best price-performance.</p>
+                                            <p>Our team can tailor a benchmarking program to suit your application and workload by capturing real traffic and simulating database load under a variety of situations.
+                                            </p>
+                                            <p><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                                            </p>
+                                        </div>
+                                        <hr class="style-one">
+
+                                        <div id="operationsreview">
+                                            <div class="service-indicator">
+                                                <h2>Operations Review</h2></div>
+                                            <div class="shift"><h3>Improve your operations through "best practice".
+                </h3>
+                                            <h4><strong>Let Fujitsu examine your procedures and processes
+                </strong></h4>
+                                            <p>During this comprehensive analysis, a Fujitsu PostgreSQL specialist examines the current procedures and processes of your PostgreSQL instance to identify if best practices have been used. If required this can entail analysis of performance bottlenecks, a review of schemas, advice on backup regimen and the suitability of replication solutions.
+                                            </p>
+
+                                            <p><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                        <hr class="style-one" >
+
+                                        <div id="consulting">
+                                            <div class="service-indicator">
+                                                <h2>Consulting</h2></div>
+
+                                            <div class="shift"><h3>Make the most of Fujitsu's expertise in implementing cost-effective, enterprise-grade, mission-critical open source database systems!
+                </h3>
+                                            <p>Are you looking for an open source strategy that will deliver all your database requirements? Fujitsu is highly experienced in implementing open source software (OSS) technologies that deliver optimal results while decreasing your total cost of ownership.
+                                            </p>
+                                            <p>Fujitsu consulting specialists are here to provide advice and support with the following:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>Strategic planning for new and established users of open source software
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Database modelling and optimization
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Rollout planning, resourcing, management, and implementation
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> Database and business application problem-solving
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <p>Fujitsu's consultants work at the enterprise, program, and project levels, and support clients through the full life cycle of their open source initiatives.
+                                            </p>
+                                            <p><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    </div>
+	   </div>
+	</div>
+    <footer>
+        <div class="container">
+            <div class="footer_part_1">
+            <ul>
+                <li class="selected"><a href="">service</a></li>
+                <li><a href="">support</a></li>
+                <li><a href="">training</a></li>
+                <li><a href="">product</a></li>
+            </ul>        
             </div>
-
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
-            </div>
-
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
-            </div>
-
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
-            </div>
-
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
-            </div>
-
-            <div class="w3-container">
-              <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 991px), and hidden on tablets and mobile phones (screens that are less than 991px wide).</p>
-              <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
-              <p><b>Resize the browser window to understand how it works.</b></p>
-            </div>
-
+            <div class="footer_part_2">
+                <p>All Rights Reserved, Copyright ©2016 Fujitsu Australia Software Technology</p>            
+            </div>        
         </div>
-        </div>
-        <footer>
-            <div class="container">
-                <div class="footer_part_1">
-                <ul>
-                    <li class="selected"><a href="">service</a></li>
-                    <li><a href="">support</a></li>
-                    <li><a href="">training</a></li>
-                    <li><a href="">product</a></li>
-                </ul>        
-                </div>
-                <div class="footer_part_2">
-                    <p>All Rights Reserved, Copyright ©2016 Fujitsu Australia Software Technology</p>            
-                </div>        
-            </div>
-    
-        </footer>
-</div>
+
+    </footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+carousel();
+
+function carousel() {
+    showDivs(slideIndex +=1);
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
 
 </body>
 </html>

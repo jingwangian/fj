@@ -1,0 +1,64 @@
+
+div.slider_container{
+	font-size: large;
+	position: relative;
+	height: 320px;
+}
+div.slider_bottom{
+/*	margin-top: 5px;*/
+	width:100%; 
+	background: gray;
+}
+
+img.mySlides{
+    width:100%;
+    height:300px;
+}
+
+div.slider_angle{
+	display: inline;
+	margin-right:20px;
+	height: 100%;
+}
+div.slider_left_angle{
+	float:right;
+	 
+}
+
+div.slider_right_angle{
+	float:right;
+	
+}
+
+div.slider_fixed_box{
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	background: red;
+
+}
+
+div.slider_changed_box{
+	position: absolute;
+	top: 10px;
+	left: 300px;
+/*	background: yellow;*/
+	max-width:1200px; 
+	height: 300px;
+
+}
+
+p.sliders_text_head{
+	font-size: 30px;
+	color: white;
+}
+
+p.sliders_text_body{
+	font-size: 18px;
+	color: white;
+}
+
+.sliders_text_button{
+	font-size: 18px;
+	color: blue;
+}
