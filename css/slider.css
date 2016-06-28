@@ -2,12 +2,13 @@
 div.slider_container{
 	font-size: large;
 	position: relative;
-	height: 320px;
+	height: 300px;
 }
 div.slider_bottom{
 /*	margin-top: 5px;*/
 	width:100%; 
 	background: gray;
+	height: 30px;
 }
 
 img.mySlides{
@@ -16,17 +17,20 @@ img.mySlides{
 }
 
 div.slider_angle{
-	display: inline;
+	display: inline-block;
 	margin-right:20px;
 	height: 100%;
+	vertical-align: middle;
+	padding-top: 2px;
+	cursor:pointer;
 }
 div.slider_left_angle{
-	float:right;
+
 	 
 }
 
 div.slider_right_angle{
-	float:right;
+
 	
 }
 
@@ -64,4 +68,11 @@ p.sliders_text_body{
 .sliders_text_button{
 	font-size: 18px;
 	color: blue;
+}
+
+div.slider_bottom_text_container{
+    display:inline-block; 
+    margin-left:20px;
+    width: 90%;
+    vertical-align: middle;
 }

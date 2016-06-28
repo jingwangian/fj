@@ -89,13 +89,22 @@
     <img class="mySlides" src="img/b3.jpg" style="width:100%">
     <img class="mySlides" src="img/b4.jpg" style="width:100%">
     </div>
-        <div class="slider_bottom">
-        	<div style="display:inline; margin-left:5px;" >Fujitsu has been developing enterprise databases for over 35 years</div>
-            <div class="slider_angle slider_right_angle" onclick="plusDivs(1)">&#10095;</div>
-            <div class="slider_angle slider_left_angle" onclick="plusDivs(-1)">&#10094;</div>
-        </div> 
+
     </div>
+
+        <div class="slider_bottom">
+            <div class="slider_bottom_text_container">
+        	<div class="slider_bottom_text">
+        	Fujitsu is the 4th largest IT services provider globally with more than 160,000 employees supporting customers in over 100 countries
+        	</div>
+        	<div class="slider_bottom_text">Fujitsu has been developing enterprise databases for over 35 years</div>
+        	<div class="slider_bottom_text">Fujitsu has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than 10 years</div>        	
     
+            </div>
+            <div class="slider_angle slider_left_angle" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="slider_angle slider_right_angle" onclick="plusDivs(1)">&#10095;</div>
+        </div> 
+            
 	<div class="frame">
 	    <div class="w3-row-padding">
 	    <h1 style="padding:0 8px;">What we offer</h1>
@@ -206,15 +215,29 @@
 
 <script>
 var slideIndex = 1;
+var slideBottomIndex = 1;
 showDivs(slideIndex);
+showBottomSliderText(slideBottomIndex);
 autoSliderShow();
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  showBottomSliderText(slideBottomIndex += n);
 }
 
 function currentDiv(n) {
-  showDivs(slideIndex = n);
+  showBottomSliderText(slideBottomIndex = n);
+}
+
+function showBottomSliderText(n) {
+  var i;
+  var x = document.getElementsByClassName("slider_bottom_text");
+
+  if (n > x.length) {slideBottomIndex = 1}    
+  if (n < 1) {slideBottomIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideBottomIndex-1].style.display = "block";  
 }
 
 function showDivs(n) {
