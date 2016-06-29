@@ -43,12 +43,11 @@ li.top_nav_li a{
     text-decoration: none;
 }
 
-li.top_nav_li.nav_menu:hover:not(.active) {
+li.top_nav_li.nav_menu_link:hover:not(.active) {
     background-color: #eeeeee;
     border-bottom-color: red;
     border-bottom-style: solid;
     border-bottom:-width: 4px;
-    
 }
 
 li.top_nav_li a:hover:active {
