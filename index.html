@@ -8,31 +8,32 @@
 <link type="text/css" rel="stylesheet" href="css/navi.css">
 <link type="text/css" rel="stylesheet" href="css/slider.css">
 <link type="text/css" rel="stylesheet" href="css/footer.css">
+<link type="text/css" rel="stylesheet" href="css/font.css">
 </head>
 <body>
 
 <!--    This part is top nav bar-->
 	<div class="top_nav" style="position:fixed; width=100%;">
 		<ul class="top_nav_ul">
-			<li class="top_nav_li top_nav_left_log" style="margin-left:30px;">
-				<a href="index.html" style="padding:auto;padding-top:8px;">
-				<img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:30px;">
+			<li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
+				<a href="index.html" style="padding:auto;padding-top:17px;">
+				<img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
 				</a>
 			</li>
-		  <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>	
-		  <li class="top_nav_li nav_menu"><a href="service.html">Services</a></li>
-		  <li class="top_nav_li nav_menu"><a href="support.html">Support</a></li>
-		  <li class="top_nav_li nav_menu"><a href="training.html">Training</a></li>
-		  <li class="top_nav_li nav_menu"><a href="product.html">Product</a></li>
-		  <li class="top_nav_li nav_menu"><a href="solution.html">Solution</a></li>
-		  <li class="top_nav_li nav_menu"><a href="contact.html">Contact</a></li>
-		  <li class="top_nav_li" style="padding-top:12px;">
-		  	<img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:10px; height:30px;">
+		  	<li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>	
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+			<li class="top_nav_li nav_menu nav_menu_link"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
+		  	<li class="top_nav_li" style="padding-top:25px;">
+		  	<img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
 		  	
 		  	</li>
-		  <li class="top_nav_li nav_menu"><a href="#contact">+61 2 9454 9191</a></li>
-		  <li class="top_nav_li top_nav_right_log" style="margin-right:30px;padding-top:12px;">
-		  	<img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:30px;">
+		  <li class="top_nav_li nav_menu"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
+		  <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
+		  	<img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
 		  	</li>
 		</ul>
 	</div>
@@ -93,16 +94,25 @@
     </div>
 
         <div class="slider_bottom">
+        	<img class="slider_bottom_left_png" src="img/folded-newspaper.png" alt="folded-newspaper">
             <div class="slider_bottom_text_container">
         	<div class="slider_bottom_text">
-        	Fujitsu is the 4th largest IT services provider globally with more than 160,000 employees supporting customers in over 100 countries
+        		<span>Fujitsu is the 4th largest IT services provider globally with more than 160,000 employees supporting customers in over 100 countries
+        		</span>
         	</div>
-        	<div class="slider_bottom_text">Fujitsu has been developing enterprise databases for over 35 years</div>
-        	<div class="slider_bottom_text">Fujitsu has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than 10 years</div>        	
-    
+        	<div class="slider_bottom_text">
+        		<span>Fujitsu has been developing enterprise databases for over 35 years
+        		</span>
+        	</div>
+        	<div class="slider_bottom_text">
+        		<span>Fujitsu has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than 10 years
+        		</span>
+        	</div>        	
             </div>
-            <div class="slider_angle slider_left_angle" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="slider_angle slider_right_angle" onclick="plusDivs(1)">&#10095;</div>
+			<div class="slider_angles">
+	            	<img class="svg_angle" src="img/left-arrow.svg" alt="left-arrow" onclick="plusDivs(-1)" style="margin-right:20px; display:inline-block;">
+	            	<img class="svg_angle" src="img/right-arrow.svg" alt="right-arrow" onclick="plusDivs(1)" style="margin:0px; display:inline-block;">
+			</div>
         </div> 
             
 	<div class="frame">
@@ -171,47 +181,21 @@
 	        
 	    </div>
 	</div>
-<!--    <footer class="foot_container">
-        <div class="foot_container_box">
-            <div class="footer_part_1">
-            <ul>
-                <li class="selected"><a href="">service</a></li>
-                <li><a href="">support</a></li>
-                <li><a href="">training</a></li>
-                <li><a href="">product</a></li>
-            </ul>        
-            </div>
-            <div class="footer_part_2">
-                <p>All Rights Reserved, Copyright ©2016 Fujitsu Australia Software Technology</p>            
-            </div>        
-        </div>
 
-    </footer>-->
+	    <div class="footer_bar">
+	    	<div class="footer_bar_left_part">
+				<ul class="footer_bar_left_part_ul">
+				  <li><a href="term.html"> Terms of Use </a></li>
+				  <li><a href="privacy.html">Privacy Policy </a></li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+	    	</div>
+	    	<div class="footer_bar_right_part">
+	    		<span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
+	    	</div> 
+	    </div>
 
-    <div id="footer"> 
-        <div class="footer_container">
-
-            <div class="footer_col footer_col_left">
-                <ul class="list-inline">
-                    <li>
-                        <a href="term.html"> Terms of Use </a>
-                    </li>
-
-                    </li>
-                    <li ><a href="privacy.html">Privacy Policy </a></li>
-
-                    <li > <a href="contact.html">Contact</a></li>
-                    <li>
-                        <a href="sitemap.html">Site Map</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer_col footer_col_right">
-                <p class="footer_text_right" style="margin:0px;">All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</p>
-            </div>
-
-		</div>
-    </div>
 
 <script>
 var slideIndex = 1;

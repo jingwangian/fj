@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "FujitsuSans";
+    src: url("../fonts/FujitsuSansRegular.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "FujitsuSansBold";
+    src: url("../fonts/FujitsuSansBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FujitsuSansLight";
+    src: url("../fonts/FujitsuSansLight.ttf"),format("truetype");
+}
+@font-face {
+    font-family: "FujitsuSansLightIta";
+    src:
+     url("../fonts/FujitsuSansLightIta.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FujitsuSansMedium";
+    src:
+       url("../fonts/FujitsuSansMedium.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "FujitsuSansMediumIta";
+    src:
+       url("../fonts/FujitsuSansMediumIta.ttf")format("truetype");
+}
+
+
+html body {
+    font-family: 'FujitsuSans', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
