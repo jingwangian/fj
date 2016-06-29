@@ -106,11 +106,22 @@ div.slider_angle{
 
 div.slider_angles img{
 	display: inline-block;
+	cursor:pointer;
 	height: 15px;
 	padding-top: 2px;
 	margin: 0px;
 	margin-top: 22px;
 	padding: 0px;
-	color: #9b9b9b;
+
+	color: white;
+
 /*	vertical-align: middle;*/
+}
+
+img.svg_angle path{
+	fill: gray;	
+}
+
+svg:hover path {
+    fill: red;
 }
