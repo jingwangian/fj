@@ -31,5 +31,5 @@
 
 html body {
     font-family: 'FujitsuSans', 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    /*-webkit-font-smoothing: antialiased;*/
 }
