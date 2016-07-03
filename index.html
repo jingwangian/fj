@@ -48,49 +48,56 @@
 
     <div class="slider_container">
 
-    <div class="slider_fixed_box_png" >
-        <img src="img/red.png" alt="" style="width:180px;height:210px;">
-    </div>
-
-    <div class="slider_fixed_box_text" style="font-size:30px;color:white">
-    Fujitsu <br>Enterprise<br>Postgres
-    </div>
-    
-    <div class="slider_changed_box" >
-	    <p class="sliders_text_head">FUJITSU Enterprise Postgres 9.5 now available1</p>
-		<p class="sliders_text_body">FUJITSU Enterprise Postgres 9.5 combines the strengths of open source PostgreSQL with
-	 significantly improved performance, security, operability and usability.</p>
-	 	<a class="sliders_text_button" href="">Found out more</a>
-    </div>
- 
-    <div class="slider_changed_box" >
-	    <p class="sliders_text_head">Postgres support 24/7</p>
-		<p class="sliders_text_body">Fujitsu can provide full 24/7 technical support for production Postgres databases
-	 or tailor a support package to your specific needs.</p>
-		<p class="sliders_text_button">Found out more</p>
-    </div>
-    
-    <div class="slider_changed_box" >
-	    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
-		<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
-	 while maintaining performance, security and reliability.</p>
-		<p class="sliders_text_button">Found out more</p>
-    </div>
-
-    <div class="slider_changed_box" >
-	    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
-		<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
-	 while maintaining performance, security and reliability.</p>
-		<p class="sliders_text_button">Found out more</p>
-    </div>
-    
-    <div class="slider_pic_groups">
-    <img class="mySlides" src="img/b1.jpg" style="width:100%">
-    <img class="mySlides" src="img/b2.jpg" style="width:100%">
-    <img class="mySlides" src="img/b3.jpg" style="width:100%">
-    <img class="mySlides" src="img/b4.jpg" style="width:100%">
-    </div>
-
+	    <div class="slider_fixed_box_png" >
+	        <img src="img/red.png" alt="" style="width:180px;height:210px;">
+	    </div>
+	
+	    <div class="slider_fixed_box_text" style="font-size:30px;color:white">
+	    Fujitsu <br>Enterprise<br>Postgres
+	    </div>
+	    
+	    <div class="slider_changed_box" >
+		    <p class="sliders_text_head">FUJITSU Enterprise Postgres 9.5 now available1</p>
+			<p class="sliders_text_body">FUJITSU Enterprise Postgres 9.5 combines the strengths of open source PostgreSQL with
+		 significantly improved performance, security, operability and usability.</p>
+		 	<a class="sliders_text_button" href="">Found out more</a>
+	    </div>
+	 
+	    <div class="slider_changed_box" >
+		    <p class="sliders_text_head">Postgres support 24/7</p>
+			<p class="sliders_text_body">Fujitsu can provide full 24/7 technical support for production Postgres databases
+		 or tailor a support package to your specific needs.</p>
+			<p class="sliders_text_button">Found out more</p>
+	    </div>
+	    
+	    <div class="slider_changed_box" >
+		    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
+			<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
+		 while maintaining performance, security and reliability.</p>
+			<p class="sliders_text_button">Found out more</p>
+	    </div>
+	
+	    <div class="slider_changed_box" >
+		    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
+			<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
+		 while maintaining performance, security and reliability.</p>
+			<p class="sliders_text_button">Found out more</p>
+	    </div>
+	    
+	    <div class="slider_pic_groups">
+		    <img class="mySlides" src="img/b1.jpg" style="width:100%">
+		    <img class="mySlides" src="img/b2.jpg" style="width:100%">
+		    <img class="mySlides" src="img/b3.jpg" style="width:100%">
+		    <img class="mySlides" src="img/b4.jpg" style="width:100%">
+	    </div>
+	    
+		<div class="slider_indicator_box">
+		    <span class="slider_indicator_dot" onclick="currentDiv(1)"></span>
+		    <span class="slider_indicator_dot" onclick="currentDiv(2)"></span>
+		    <span class="slider_indicator_dot" onclick="currentDiv(3)"></span>
+		    <span class="slider_indicator_dot" onclick="currentDiv(4)"></span>
+		</div>
+	
     </div>
 
         <div class="slider_bottom">
@@ -209,7 +216,7 @@ function plusDivs(n) {
 }
 
 function currentDiv(n) {
-  showBottomSliderText(slideBottomIndex = n);
+  showDivs(slideIndex = n);
 }
 
 function showBottomSliderText(n) {
@@ -228,6 +235,7 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var x_text = document.getElementsByClassName("slider_changed_box");
+  var dots = document.getElementsByClassName("slider_indicator_dot");
 
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
@@ -235,13 +243,19 @@ function showDivs(n) {
      x[i].style.display = "none";  
      x_text[i].style.display = "none";
   }
+
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  
   x[slideIndex-1].style.display = "block";  
   x_text[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
 }
 
 function autoSliderShow() {
 	slideIndex = slideIndex+1;
-    showDivs(slideIndex +=1);
+    showDivs(slideIndex);
     setTimeout(autoSliderShow, 2000); // Change image every 2 seconds
 }
 

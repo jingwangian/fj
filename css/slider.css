@@ -46,6 +46,50 @@ p.sliders_text_body{
 	color: blue;
 }
 
+
+.slider_indicator_box{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	width:100%;
+	line-height: 27px;
+/*	color: rgb(255, 255, 255);*/
+
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+.slider_indicator_dot{
+	background-color: transparent;
+	border-color: rgb(204, 204, 204);
+	border-style: solid;
+	border-width: 1px;
+	width: 12px;
+	height: 12px;
+/*	border-radius: 6.5px;*/
+
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-source: none;
+	border-image-width: 1 1 1 1;
+
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: inline-block;
+	
+	padding: 0px;
+
+	text-align: center;
+	transition-delay: 0s, 0s, 0s, 0s;
+	transition-duration: 0.3s, 0.15s, 0.3s, 0.3s;
+	transition-property: background-color, color, box-shadow, opacity;
+	transition-timing-function: ease, ease, ease, ease;
+}
+
+.slider_indicator_dot:hover{color:#000!important;background-color:#fff!important}
+
 div.slider_bottom{
 /*	margin-top: 5px;*/
 	width:100%; 
