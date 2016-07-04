@@ -1,0 +1,72 @@
+
+/*SERVICE  PAGE CSS */
+.sidebar ul {
+    background-color: #ffffff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 357px;
+    line-height: 59px;
+}
+.sidebar li a {
+    display: block;
+    color: #000;
+    padding: 0px 0px 0px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #e3e3e3;
+}
+.sidebar li a.active {
+    background-color:#e3e3e3;
+    color: #000000;
+    border-left:2px solid #d30909;
+    ;
+}
+.sidebar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.sidebar {
+    float:left;
+    font-size: 20px;
+
+}
+@media screen and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
+.content {
+    background-color: white;
+    padding-left: 25px;
+}
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.content li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    list-style-type: square;
+    font-size: 25px;
+    color:red;
+}
+.content li p {
+    color:black;
+}
+.content li:before {
+    list-style-type: square;
+    color: red;
+    /* or whatever color you prefer */
+}
+.content a {
+    font-weight: bolder;
+    color:black;
+}
+.service-indicator {
+    border-left: 2px solid #711313;
+    padding-left: 20px;
+}
+.service-indicator h1 {
+    color:#000000;
+}

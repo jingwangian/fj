@@ -1,208 +1,352 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/w3c.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/navi.css">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<link type="text/css" rel="stylesheet" href="css/w3c.css">
-<link type="text/css" rel="stylesheet" href="css/index.css">
-<link type="text/css" rel="stylesheet" href="css/navi.css">
-<link type="text/css" rel="stylesheet" href="css/slider.css">
-<link type="text/css" rel="stylesheet" href="css/footer.css">
-<link type="text/css" rel="stylesheet" href="css/font.css">
 </head>
-<body>
 
+<body style="background-color: #f7f9f8;">
+    <!--    This part is top nav bar-->
 <!--    This part is top nav bar-->
-	<div class="top_nav" style="position:fixed; width=100%;">
-		<ul class="top_nav_ul">
-			<li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
-				<a href="index.html" style="padding:auto;padding-top:17px;">
-				<img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
-				</a>
-			</li>
-		  	<li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>	
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
-			<li class="top_nav_li nav_menu nav_menu_link"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
-		  	<li class="top_nav_li" style="padding-top:25px;">
-		  	<img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
-		  	
-		  	</li>
-		  <li class="top_nav_li nav_menu"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
-		  <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
-		  	<img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
-		  	</li>
-		</ul>
-	</div>
+    <div class="top_nav" style="position:fixed; width=100%;">
+        <ul class="top_nav_ul">
+            <li class="top_nav_li top_nav_left_log active" style="margin-left:30px;margin-right:20px;">
+                <a href="index.html" style="padding:auto;padding-top:17px;">
+                <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
+                </a>
+            </li>
+            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
+
+
+            <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+            <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+            <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
+
+            <li class="top_nav_li phone" >
+            <a href="tel://+6194549191" style="padding-top:25px;"><img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;"></a>
+
+            </li>
+          <li class="top_nav_li nav_menu "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+          <li class="top_nav_li top_nav_right_log" style="margin-right:10px;padding-top:20px;">
+           <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
+            </li>
+
+                       <!-- toggle Menu -->
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+              </li>
+
+        </ul>
+    </div>
 
 
     <div class="top_nav" style="position:static;">
     </div>
-    
 
-    
-<!--    This part is slider bar-->
 
+        <!--    This part is slider bar-->
     <div class="slider_container">
+        <div class="slider_fixed_box_png">
+            <img src="img/red.png" alt="" style="width:210px;height:250px;">
+        </div>
+        <div class="slider_fixed_box_text" style="font-size:30px;color:white; line-height: 1.2;">
+            Fujitsu
+            <br>Enterprise
+            <br>Postgres
+        </div>
+        <div class="slider_changed_box w3-animate-opacity">
+            <p class="sliders_text_head">FUJITSU Enterprise Postgres 9.5 now available</p>
+            <p class="sliders_text_body">FUJITSU Enterprise Postgres 9.5 combines the strengths of open source PostgreSQL with significantly improved performance, security, operability and usability.
+</p>
+            <a class="sliders_text_button btn-lg btn-default" href="product.html">Find out more</a>
+        </div>
+        <div class="slider_changed_box w3-animate-opacity">
+            <p class="sliders_text_head">Postgres support 24/7</p>
+            <p class="sliders_text_body">Fujitsu can provide full 24/7 technical support for production Postgres databases or tailor a support package to your specific needs.
+</p>
+            <a class="sliders_text_button btn-lg btn-default" href="support.html">Find out more</a>
+        </div>
+        <div class="slider_changed_box w3-animate-opacity">
+            <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
+            <p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database while maintaining performance, security and reliability.</p>
+            <a class="sliders_text_button btn-lg btn-default" href="services.html">Find out more</a>
+        </div>
+        <div class="slider_changed_box w3-animate-opacity">
+            <p class="sliders_text_head">FUJITSU Enterprise Postgres</p>
+            <p class="sliders_text_body">One of the fastest, most secure databases available today, FUJITSU Enterprise Postgres provides open source value and enterprise quality for mission-critical use.
+</p>
+            <a class="sliders_text_button btn-lg btn-default" href="product.html">Find out more</a>
+        </div>
+        <div class="slider_pic_groups">
+            <img class="mySlides img-responsive" src="img/b1.jpg" style="width:100%">
+            <img class="mySlides img-responsive" src="img/b2.jpg" style="width:100%">
+            <img class="mySlides img-responsive" src="img/b3.jpg" style="width:100%">
+            <img class="mySlides img-responsive" src="img/b4.jpg" style="width:100%">
+        </div>
+        <!-- Indicator box-->
 
-	    <div class="slider_fixed_box_png" >
-	        <img src="img/red.png" alt="" style="width:180px;height:210px;">
-	    </div>
-	
-	    <div class="slider_fixed_box_text" style="font-size:30px;color:white">
-	    Fujitsu <br>Enterprise<br>Postgres
-	    </div>
-	    
-	    <div class="slider_changed_box" >
-		    <p class="sliders_text_head">FUJITSU Enterprise Postgres 9.5 now available1</p>
-			<p class="sliders_text_body">FUJITSU Enterprise Postgres 9.5 combines the strengths of open source PostgreSQL with
-		 significantly improved performance, security, operability and usability.</p>
-		 	<a class="sliders_text_button" href="">Found out more</a>
-	    </div>
-	 
-	    <div class="slider_changed_box" >
-		    <p class="sliders_text_head">Postgres support 24/7</p>
-			<p class="sliders_text_body">Fujitsu can provide full 24/7 technical support for production Postgres databases
-		 or tailor a support package to your specific needs.</p>
-			<p class="sliders_text_button">Found out more</p>
-	    </div>
-	    
-	    <div class="slider_changed_box" >
-		    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
-			<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
-		 while maintaining performance, security and reliability.</p>
-			<p class="sliders_text_button">Found out more</p>
-	    </div>
-	
-	    <div class="slider_changed_box" >
-		    <p class="sliders_text_head">Reduce your database costs by 80% or more</p>
-			<p class="sliders_text_body">Let Fujitsu show you how to drastically reduce the TCO of your enterprise database
-		 while maintaining performance, security and reliability.</p>
-			<p class="sliders_text_button">Found out more</p>
-	    </div>
-	    
-	    <div class="slider_pic_groups">
-		    <img class="mySlides" src="img/b1.jpg" style="width:100%">
-		    <img class="mySlides" src="img/b2.jpg" style="width:100%">
-		    <img class="mySlides" src="img/b3.jpg" style="width:100%">
-		    <img class="mySlides" src="img/b4.jpg" style="width:100%">
-	    </div>
-	    
-		<div class="slider_indicator_box">
-		    <span class="slider_indicator_dot" onclick="currentDiv(1)"></span>
-		    <span class="slider_indicator_dot" onclick="currentDiv(2)"></span>
-		    <span class="slider_indicator_dot" onclick="currentDiv(3)"></span>
-		    <span class="slider_indicator_dot" onclick="currentDiv(4)"></span>
-		</div>
-	
+            <div class="slider_indicator_box">
+            <span class="slider_indicator_dot" onclick="currentDiv(1)"></span>
+            <span class="slider_indicator_dot" onclick="currentDiv(2)"></span>
+            <span class="slider_indicator_dot" onclick="currentDiv(3)"></span>
+            <span class="slider_indicator_dot" onclick="currentDiv(4)"></span>
+        </div>
+    </div>
+       <div class="slider_bottom">
+            <img class="slider_bottom_left_png" src="img/newspaper-folded.svg" alt="folded-newspaper">
+
+            <div class="slider_bottom_text_container">
+
+            <div class=" slider_bottom_text zxx_text_overflow_5 " style="display:inline-block;">
+                <span class="subject">Fujitsu is the 4th largest IT services provider globally with more than 160,000 employees supporting customers in over 100 countries</span>
+
+            </div>
+            <div class="slider_bottom_text zxx_text_overflow_5" style="display:inline-block;">
+                  <span class="subject">Fujitsu has been developing enterprise databases for over 35 years
+                </span>
+
+            </div>
+            <div class= "slider_bottom_text zxx_text_overflow_5" style="display:inline-block;">
+                 <span class="subject">Fujitsu has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than 10 years
+                </span>
+
+            </div>
+
+            </div>
+            <div class="slider_angles">
+                    <img class="svg_angle" src="img/angle-pointing-to-left.svg" alt="left-arrow" onclick="plusDivs(-1)" style="margin-right:0px; display:inline-block;">
+                    <img class="svg_angle" src="img/angle-arrow-pointing-to-right.svg" alt="right-arrow" onclick="plusDivs(1)" style="margin:0px; display:inline-block;">
+            </div>
+        </div>
+    <article style="background-color: #f7f9f8;">
+        <!--   <div class="frame">
+        <div class="w3-row-padding">
+        <h1 class="verticalLine" style="padding:0 8px;">What we offer</h1>
+                </div>
+            <div class="w3-quarter">
+ -->
+       <div class="frame" style="padding-left: 30px;">
+        <div class="w3-row-padding" style="padding-left: 0px; padding-right: 10px;">
+                        <div class="get-top">
+
+            <div class="verticalLine"></div>
+        <h1  class="offer-text" style="padding:0 8px;">What We Offer</h1>
     </div>
 
-        <div class="slider_bottom">
-        	<img class="slider_bottom_left_png" src="img/folded-newspaper.png" alt="folded-newspaper">
-            <div class="slider_bottom_text_container">
-        	<div class="slider_bottom_text">
-        		<span>Fujitsu is the 4th largest IT services provider globally with more than 160,000 employees supporting customers in over 100 countries
-        		</span>
-        	</div>
-        	<div class="slider_bottom_text">
-        		<span>Fujitsu has been developing enterprise databases for over 35 years
-        		</span>
-        	</div>
-        	<div class="slider_bottom_text">
-        		<span>Fujitsu has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than 10 years
-        		</span>
-        	</div>        	
+        <div class="w3-container" style="padding-left:30px; padding-right: 0px;">
+            <div class="w3-col l3 m6 s12 ">
+                <div class="card">
+                    <img class="card-img-top" src="img/thumb1.jpg" data-src="..." alt="Card image cap">
+                    <div class="card-block">
+                        <h3 class="card-title">Postgres Support</h3>
+                        <p class="card-text module line-clamp">We provide technical support when you need it, with full 24/7 technical support for production PostgreSQL systems or business hours only support.
+                        </p>
+                        <a href="" class="btn btn-explore text-left">explore</a>
+                    </div>
+                </div>
             </div>
-			<div class="slider_angles">
-	            	<img class="svg_angle" src="img/left-arrow.svg" alt="left-arrow" onclick="plusDivs(-1)" style="margin-right:20px; display:inline-block;">
-	            	<img class="svg_angle" src="img/right-arrow.svg" alt="right-arrow" onclick="plusDivs(1)" style="margin:0px; display:inline-block;">
-			</div>
-        </div> 
-            
-	<div class="frame">
-	    <div class="w3-row-padding">
-	    <h1 style="padding:0 8px;">What we offer</h1>
-	        <div class="w3-quarter">
-	            <p><img class="card_img" src="img/home_offer.jpg " style="width:314px;" alt=""></p>
-	            <h2>London</h2>
-	            <p>London is the capital of England.</p>
-	            <p>It is the most populous city in the United Kingdom,
-	            with a metropolitan area of over 13 million inhabitants.</p>
-	        </div>
-	        
-	        <div class="w3-quarter">
-	            <p><img class="card_img" src="img/home_offer.jpg " style="width:314px;" alt=""></p>
-	            <h2>Paris</h2>
-	            <p>Paris is the capital of France.</p>
-	            <p>The Paris area is one of the largest population centers in Europe,
-	            with more than 12 million inhabitants.</p>
-	        </div>
-	        
-	        <div class="w3-quarter">
-	            <p><img class="card_img" src="img/home_offer.jpg " style="width:314px;" alt=""></p>
-	            <h2>Tokyo</h2>
-	            <p>Tokyo is the capital of Japan.</p>
-	            <p>It is the center of the Greater Tokyo Area,
-	            and the most populous metropolitan area in the world.</p>
-	        </div>
-	
-	        <div class="w3-quarter">
-	            <p><img class="card_img" src="img/home_offer.jpg " style="width:314px;" alt=""></p>
-	            <h2>Tokyo</h2>
-	            <p>Tokyo is the capital of Japan.</p>
-	            <p>It is the center of the Greater Tokyo Area,
-	            and the most populous metropolitan area in the world.</p>
-	            	            <p>It is the center of the Greater Tokyo Area,
-	            and the most populous metropolitan area in the world.</p>
-	            	            <p>It is the center of the Greater Tokyo Area,
-	            and the most populous metropolitan area in the world.</p>
-	        </div>
-        
-	    </div>
-    
-	    <div class="w3-row-padding">
-	        <h1 style="padding:0 8px;">What you choose ?</h1>
-	        <div class="w3-third">
-	            <h2>London</h2>
-	            <p>London is the capital of England.</p>
-	            <p>It is the most populous city in the United Kingdom,
-	            with a metropolitan area of over 13 million inhabitants.</p>
-	        </div>
-	        
-	        <div class="w3-third">
-	            <h2>Paris</h2>
-	            <p>Paris is the capital of France.</p>
-	            <p>The Paris area is one of the largest population centers in Europe,
-	            with more than 12 million inhabitants.</p>
-	        </div>
-	        
-	        <div class="w3-third">
-	            <h2>Tokyo</h2>
-	            <p>Tokyo is the capital of Japan.</p>
-	            <p>It is the center of the Greater Tokyo Area,
-	            and the most populous metropolitan area in the world.</p>
-	        </div>
-	        
-	    </div>
-	</div>
+            <div class="w3-col l3 m6 s12 ">
+                <div class="card">
+                    <img class="card-img-top" src="img/thumb2.jpg" data-src="..." alt="Card image cap">
+                    <div class="card-block">
+                        <h3 class="card-title">Services</h3>
+                        <p class="card-text module line-clamp ">Our migration and consulting services are second to none. Let us show you how to reduce your database TCO by 80% or more by migrating from major proprietary vendor databases. Our specialist consultants can show you to get the best out of your PostgreSQL system with health checks, benchmarking tests, and operations reviews. We can assist with strategic planning, database modelling and optimization, problem-solving, and much more.</p>
+                        <a href="#" class="btn btn-explore text-left">explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 ">
+                <div class="card">
+                    <img class="card-img-top" src="img/thumb3.jpg" data-src="..." alt="Card image cap">
+                    <div class="card-block">
+                        <h3 class="card-title">Trainning</h3>
+                        <p class="card-text module line-clamp">Training is provided and backed by our team of PostgreSQL experts who can readily answer your questions with their in-depth knowledge of PostgreSQL and extensive experience in developing and supporting PostgreSQL systems.
+                        We tailor our training to your requirements, providing what you need, when you need it.</p>
+                        <a href="#" class="btn btn-explore text-left">explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 ">
+                <div class="card">
+                    <img class="card-img-top" src="img/thumb4.jpg" data-src="..." alt="Card image cap">
+                    <div class="card-block">
+                        <h3 class="card-title">Postgres Solutions</h3>
+                        <p class="card-text module line-clamp">Fujitsu is the only vendor providing complete end-to-end PostgreSQL solutions with support, migration, appliance and cloud offerings.
+                        Our solutions include FUJITSU Enterprise Postgres, a cost-effective, enterprise-grade RDBMS that is 100% compatible with PostgreSQL but with additional features for increased performance, security and ease of use.</p>
+                        <a href="#" class="btn btn-explore text-left">explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
-	    <div class="footer_bar">
-	    	<div class="footer_bar_left_part">
-				<ul class="footer_bar_left_part_ul">
-				  <li><a href="term.html"> Terms of Use </a></li>
-				  <li><a href="privacy.html">Privacy Policy </a></li>
-				  <li><a href="about.html">About</a></li>
-				  <li><a href="contact.html">Contact</a></li>
-				</ul>
-	    	</div>
-	    	<div class="footer_bar_right_part">
-	    		<span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
-	    	</div> 
-	    </div>
 
+        <!-- / .container -->
+        <!--         <div class="card">
+                            <img class="card-img-top" src="https://placeimg.com/500/300/any" data-src="..." alt="Card image cap">
+                            <div class="card-block">
+                                <h3 class="card-title">Trainning</h3>
+                                <p class="card-text module line-clamp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-explore">explore</a>
+
+                            </div>
+                        </div>
+            <div class="w3-quarter">
+                  <img class="card-img-top" src="https://placeimg.com/500/300/any" data-src="..." alt="Card image cap">
+                            <div class="card-block">
+                                <h3 class="card-title">Trainning</h3>
+                                <p class="card-text module line-clamp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-explore">explore</a>
+
+                            </div>
+                        </div>
+
+            <div class="w3-quarter">
+                  <img class="card-img-top" src="https://placeimg.com/500/300/any" data-src="..." alt="Card image cap">
+                            <div class="card-block">
+                                <h3 class="card-title">Trainning</h3>
+                                <p class="card-text module line-clamp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-explore">explore</a>
+
+                            </div>
+                        </div>
+
+            <div class="w3-quarter">
+                 <img class="card-img-top" src="https://placeimg.com/500/300/any" data-src="..." alt="Card image cap">
+                            <div class="card-block">
+                                <h3 class="card-title">Trainning</h3>
+                                <p class="card-text module line-clamp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-explore">explore</a>
+
+                            </div>
+                        </div>
+
+        </div>
+
+</div>
+</article>
+        </div> -->
+    </article>
+    <article style="background-color: #ffffff;">
+        <div class="frame" style="padding-left: 30px;">
+            <div class="get-top">
+                <div class="verticalLine"></div>
+        <h1  class="offer-text" style="">Why Choose Fujitsu</h1>
+        </div>
+    <!--     <div class="w3-container" style="padding-left:30px; padding-right: 0px;">
+
+            <div class="w3-third">
+            <h3 class="experience">We have the experience and expertise</h3>
+                        <div class="services-card col-md-12 ">
+                            <p>Fujitsu has been developing mission-critical enterprise database systems for over 35 years and has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than a decade.
+                            </p>
+                        </div>
+                    </div>
+            <div class="w3-third p">
+            <h3 class="experience">We have the experience and expertise</h3>
+                        <div class="services-card col-md-12 ">
+                            <p>Fujitsu has been developing mission-critical enterprise database systems for over 35 years and has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than a decade.
+                            </p>
+                        </div>
+                    </div>
+          <div class="w3-third">
+            <h3 class="experience">We have the experience and expertise</h3>
+                        <div class="services-card col-md-12 ">
+                            <p>Fujitsu has been developing mission-critical enterprise database systems for over 35 years and has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than a decade.
+                            </p>
+                        </div>
+                    </div>
+        </div> -->
+ <div class="w3-container" style="padding-left:30px; padding-right: 0px;padding-bottom: 20px;">
+
+                 <div class="clearfix"></div>
+                <div class="w3-row ">
+                    <div class="w3-col l3 m6 s12 services">
+                        <h3 class="experience">We have the experience and expertise</h3>
+                        <div class="services-card col-md-12 ">
+                            <p>Fujitsu has been developing mission-critical enterprise database systems for over 35 years and has provided PostgreSQL development, product support, training and consulting services to large corporate and government organizations globally for more than a decade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12 services">
+                        <div class="services-card col-md-12">
+                            <h3>We are leaders in open source development</h3>
+                            <p>Fujitsu has been a leader in open source development since the early eighties. As a long-term contributor to the development of open source database systems, Fujitsu is proud of its commitment to the promotion of PostgreSQL as a world-class mission-critical enterprise database.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12 services">
+                        <h3 class="experience">We provide end-to-end solutions</h3>
+                        <div class="services-card col-md-12">
+                            <p>Fujitsu is the only vendor providing complete end-to-end PostgreSQL solutions with support, migration, hardware appliance and cloud offerings.
+                            </p>
+                        </div>
+                    </div>
+
+                      <div class="w3-col l3 m6 s12 services">
+                        <h3 class="experience">We provide what you need, when you need it</h3>
+                        <div class="services-card col-md-12">
+                            <p>Fujitsu provides the support, services and training you need, when you need them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </article>
+    <!--    <footer class="foot_container">
+        <div class="foot_container_box">
+            <div class="footer_part_1">
+            <ul>
+                <li class="selected"><a href="">service</a></li>
+                <li><a href="">support</a></li>
+                <li><a href="">training</a></li>
+                <li><a href="">product</a></li>
+            </ul>
+            </div>
+            <div class="footer_part_2">
+                <p>All Rights Reserved, Copyright ©2016 Fujitsu Australia Software Technology</p>
+            </div>
+        </div>
+
+    </footer>-->
+<div class="footer_bar">
+    <div class="footer_bar_left_part">
+        <ul class="footer_bar_left_part_ul">
+          <li><a href="term.html"> Terms of Use </a></li>
+          <li><a href="privacy.html">Privacy Policy </a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer_bar_right_part">
+        <span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
+    </div>
+</div>
+
+<!-- Navi -->
+
+<script>
+
+function myFunction() {
+    document.getElementsByClassName("top_nav_ul")[0].classList.toggle("responsive");
+}
+
+</script>
 
 <script>
 var slideIndex = 1;
@@ -223,12 +367,12 @@ function showBottomSliderText(n) {
   var i;
   var x = document.getElementsByClassName("slider_bottom_text");
 
-  if (n > x.length) {slideBottomIndex = 1}    
+  if (n > x.length) {slideBottomIndex = 1}
   if (n < 1) {slideBottomIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
-  x[slideBottomIndex-1].style.display = "block";  
+  x[slideBottomIndex-1].style.display = "block";
 }
 
 function showDivs(n) {
@@ -237,29 +381,41 @@ function showDivs(n) {
   var x_text = document.getElementsByClassName("slider_changed_box");
   var dots = document.getElementsByClassName("slider_indicator_dot");
 
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
      x_text[i].style.display = "none";
   }
 
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-red", "");
   }
-  
-  x[slideIndex-1].style.display = "block";  
+
+  x[slideIndex-1].style.display = "block";
   x_text[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-red";
 }
 
 function autoSliderShow() {
-	slideIndex = slideIndex+1;
+    slideIndex = slideIndex+1;
     showDivs(slideIndex);
-    setTimeout(autoSliderShow, 2000); // Change image every 2 seconds
+    setTimeout(autoSliderShow, 6000); // Change image every 6 seconds
 }
 
 </script>
-
 </body>
+<script>
+    $(document).ready(function(){
+    $(".zxx_text_overflow_5").each(function(){
+        var maxwidth=23;
+        if($(this).text().length>maxwidth){
+            $(this).text($(this).text().substring(0,maxwidth));
+            $(this).html($(this).html()+'...');
+        }
+    });
+});
+
+
+</script>
 </html>

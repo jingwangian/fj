@@ -1,10 +1,6 @@
 @font-face {
     font-family: "FujitsuSans";
-    src: url("../fonts/FujitsuSansRegular.ttf")format("truetype"),
-         url("../fonts/FujitsuSansRegular.woff")format("woff"),
-         url("../fonts/FujitsuSansRegular.eot")format("woff"),
-         url("../fonts/FujitsuSansRegular.eot?#iefix") format('embedded-opentype'),
-         url('../fonts/FujitsuSansRegular.svg#svgFontName') format('svg');
+    src: url("../fonts/FujitsuSansRegular.ttf")format("truetype");
 }
 
 @font-face {
@@ -35,8 +31,6 @@
 html {
     font-family: 'FujitsuSans', 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-        -moz-font-smoothing: antialiased;
-
 }
 
 body {
@@ -2740,7 +2734,6 @@ fieldset[disabled] .btn-default.active {
     left: 0;
 }
 
-
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -5316,7 +5309,7 @@ a.carousel-arrow-next {
 .bs-sidebar {
     margin-bottom: 50px;
 }
- .bs-sidebar.affix {
+<div class="col-sm-6 hidden-xs"> <img class="img-responsive" src="images/red.png" alt="..."> </div> .bs-sidebar.affix {
     position: static;
 }
 @media (min-width: 992px) {
@@ -5613,7 +5606,7 @@ a.arrow-right {
     content: "";
     max-width: 314px;
     height: 467px;
-    position: absolute;
+    position: relative;
     display: table;
 }
 .card img {
@@ -5773,10 +5766,49 @@ footer {
     line-height: 60px;
 }
 
+/*SERVICE  PAGE CSS */
+#sidebar ul {
+    background-color: #ffffff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 357px;
+    line-height: 59px;
+}
+#sidebar li a {
+    display: block;
+    color: #000;
+    padding: 0px 0px 0px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #e3e3e3;
+}
+#sidebar li a.active {
+    background-color:#e3e3e3;
+    color: #000000;
+    border-left:2px solid #d30909;
+    ;
+}
+#sidebar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
 
+
+
+#sidebar {
+    float: left;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: -10px;
+}
+@media screen and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
 .content {
     background-color: white;
-    margin-left: 30px;
+    padding-left: 25px;
 }
 .content ul {
     list-style: none;
@@ -5785,12 +5817,10 @@ footer {
 }
 .content li {
     padding-left: 1em;
-    text-indent: -.9em;
+    text-indent: -.7em;
     list-style-type: square;
     font-size: 25px;
     color:red;
-      list-style-position:inside;
-
 }
 .content li p {
     color:black;
@@ -5806,8 +5836,7 @@ footer {
 }
 .service-indicator {
     border-left: 2px solid #ff0000;
-    padding-left: 20px;
-    top:-100px;
+    padding-left: 25px;
 }
 .service-indicator h1 {
     color:#000000;
@@ -5830,11 +5859,12 @@ footer {
     color:red;
 }
 .solutions-list img{
-    padding-bottom: 20px;
+    padding-bottom: 45px;
 }
 
 .solutions-list a{
     font-weight: bolder;
+    color: #ff0000;
 }
 .square p{
     color:#333333;
@@ -5851,7 +5881,6 @@ hr.style-one {
     margin-bottom: 0;
     background: #dcdcd4 ;
     color: #ffffff;
-
 }
 .product-navbar {
     list-style-type:none;
@@ -5885,9 +5914,9 @@ hr.style-one {
     box-shadow .3s,
     opacity 0.3s
 }
-/*#product-align h3{
+#product-align h3{
     padding-left: 90px;
-}*/
+}
 
 @media screen and (max-width: 768px){
     #product-align h3{
@@ -5905,7 +5934,7 @@ hr.style-one {
 .content-wrapper {
     height: auto;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contact-form{
@@ -5914,33 +5943,25 @@ hr.style-one {
 }
 .forms{
     max-width: 648px;
-        position: relative;
-    display: table;
-
 }
 
 .address{
-    max-width: 540px;
+    max-width: 565px;
+    margin-left: 120px;
     background-color: #EDEDED;
-    margin-top: 20px;
-        margin-left: auto;
-            position: relative;
-    display: table;
-        margin-left: 120px;
-
-
+    margin-top: 40px;
 }
 
 .contact-phone{
-    margin:30px;
-
+    margin:40px;
 }
 .address-margin{
     margin-bottom:30px;
+    line-height: 2;
 
 }
 .contact-inner{
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .train{
     padding-left: 25px;

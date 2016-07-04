@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/navi.css">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+</head>
+<style type="text/css">
+.sticky {
+    position: relative;
+    top: 0;
+}
+</style>
+
+<body>
+    <!--    This part is top nav bar-->
+    <!--    This part is top nav bar-->
+    <div class="top_nav" style="position:fixed; width=100%;">
+        <ul class="top_nav_ul">
+            <li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
+                <a href="index.html" style="padding:auto;padding-top:17px;">
+                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
+                </a>
+            </li>
+            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
+            <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+            <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+            <li class="top_nav_li nav_menu nav_menu_active"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
+            <li class="top_nav_li" style="padding-top:25px;">
+                <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+            </li>
+            <li class="top_nav_li nav_menu"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
+            <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
+                <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
+            </li>
+        </ul>
+    </div>
+    <div class="top_nav" style="position:static;">
+    </div>
+    <div class="slider_container_new">
+        <img class="banner" src="img/img_nature_wide.jpg" style="width:100%">
+        <h1 class="banner_text">Solutions</h1>
+    </div>
+    <div class="frame">
+        <div class="content-wrapper">
+            <div class="w3-row-padding">
+                <div class="col-md-12 " style="padding:0px 30px 0 30px;">
+                    <div class="service-indicator">
+                        <h1 class="support" style="margin-top: 0; margin-left: 7px;">End-to-end Solutions</h1></div>
+                    <div class="solutions-list">
+                        <h3><strong>Fujitsu is the only vendor providing complete end-to-end Postgres solutions</strong></h3>
+                        <p>Consider the benefits of an integrated hardware and software open source database solution - by combining with Fujitsu hardware, advanced global support and professional services, customers can create an open source mission-critical database with enterprise quality and reliability at a much reduced cost - all supported by a single vendor.
+                        </p>
+                        <p>Fujitsu is the only vendor providing complete end-to-end PostgreSQL solutions with software, support, hardware appliance and cloud offerings:
+                        </p>
+                        <ul class="square">
+                            <li>
+                                <p><strong><a href="product.html">FUJITSU Enterprise Postgres</a></strong>: Cost-effective, enterprise-grade PostgreSQL-based RDBMS that is 100% compatible with PostgreSQL but with additional features for increased performance, security and ease of use
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Integrated <a href="http://www.fujitsu.com/fts/products/computing/integrated-systems/">PRIMEFLEX</a> for HA Database</strong>: High-performance, high-availability database ready PostgreSQL hardware appliance
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Analytics Server </strong>: Data analysis performance up to 500 times better than a general-purpose database
+                                </p>
+                            </li>
+                        </ul>
+                        <div><img class="img-responsive" src="img/solution.png" alt="end-to-end solutions"></div>
+                        <div>
+                            <p style="margin-bottom: -10px;"><a href="contact.html">Contact us </a>if you would like to discuss our migration services in more detail or to request a quotation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bar">
+        <div class="footer_bar_left_part">
+            <ul class="footer_bar_left_part_ul">
+                <li><a href="term.html"> Terms of Use </a></li>
+                <li><a href="privacy.html">Privacy Policy </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_bar_right_part">
+            <span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
+        </div>
+    </div>
+</body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-white";
+}
+
+
+carousel();
+
+function carousel() {
+    showDivs(slideIndex += 1);
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</html>

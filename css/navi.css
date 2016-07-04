@@ -1,6 +1,6 @@
 /*body{
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 */
 .top_nav{
@@ -8,21 +8,21 @@
     margin: 0px 0px 0px 0px;
     height: 80px;
     width: 100%;
-    position:fixed; 
+    position:fixed;
     top: 0px;
-    background-color: white;
+    background-color: #ffffff;
     z-index: 1;
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-bottom-color: #F7F9F8;
-    
+
 }
 ul.top_nav_ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+
 /*    background-color: #333;*/
 }
 
@@ -34,21 +34,30 @@ li.top_nav_li {
 }
 
 li.top_nav_li a{
-    display: block;
+    display:inline-block;
 /*    color: white;*/
     text-align: center;
     padding-top: 25px;
 /*    padding-left: 16px;*/
 /*    padding: 10px 16px;*/
     text-decoration: none;
+      transition: 0.3s;
+
 }
 
-li.top_nav_li.nav_menu_link:hover:not(.active) {
+li.nav_menu:hover:not(.active) {
     background-color: #eeeeee;
-    border-bottom-color: red;
+    border-bottom-color: #ff0000;
     border-bottom-style: solid;
-    border-bottom:-width: 4px;
+    border-bottom-width: 4px;
 }
+
+li.nav_menu_active{
+    border-bottom-color: #ff0000;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;	
+}
+
 
 li.top_nav_li a:hover:active {
 /*    background-color: red;;*/
@@ -66,36 +75,95 @@ li#nav_menu_show{
     display: none;
 }
 
+
+
 li#nav_menu_show a:hover:not(.active) {
     background-color: red;
 }
 
+
+
+
 img#img_nav_left_png,img#img_nav_right_png,img#img_nav_phone_png
 {
-	display: block; 
-/*	width: 25px; */
-	margin: auto;
+    display: block;
+/*  width: 25px; */
+    margin: auto;
 }
 
 li.top_nav_right_log{
-	float:right;
+    float:right;
+}
+
+ul.top_nav_ul li.icon {display: none;}
+/*hamberger size*/
+#hamberger{
+    font-size: 30px;
+    margin:0px 30px 0 0;
+}
+.icon{
+    margin-top: 15px;
+}
+
+.number{
+    margin-left:10px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .number {
+        display:none;
+    }
 }
 
 
-@media (max-width:601px){
-/*	li.nav_menu_dropdown{display: inline;}
-	div.dropdown{display: inline-block;}
-	li.nav_menu{display: none;}
-		
-*/
-    li.nav_menu{display: none;}
-	li.top_nav_right_log{display: none;}
-/*	li.top_nav_left_log{display: none;}*/
-	li#nav_menu_show{display: block; float: right;}
 
-	}
-@media (min-width:801px){
-/*	li.nav_menu_dropdown{display: none;}
-	div.dropdown{display: none;}*/
-	}
-	
+/*Navi Responsive */
+/* When the screen is less than 768 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:800px) {
+  ul.top_nav_ul li:not(:first-child) {display: none;
+  }
+  ul.top_nav_ul li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:800px) {
+  ul.top_nav_ul.responsive {position: relative;}
+  ul.top_nav_ul.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  ul.top_nav_ul.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.top_nav_ul.responsive li a {
+    display: block;
+    text-align: left;
+    background-color: #F7F9F8;
+/*    border-bottom:1px solid gray;
+*/        width:100%;
+
+  }
+  ul.top_nav_ul.responsive li a:hover {
+    color:#ff0000;
+    background:grey;
+  }
+
+
+.number
+{
+    display:none;
+}
+img#img_nav_right_png{
+    display:none;
+    top: -10px;
+
+}
+
+}
+

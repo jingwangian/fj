@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/navi.css">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+    <link type="text/css" rel="stylesheet" href="css/support.css">
+</head>
+
+<body style="background-color: #f7f9f8">
+    <!--    This part is top nav bar-->
+    <!--    This part is top nav bar-->
+    <div class="top_nav" style="position:fixed; width=100%;">
+        <ul class="top_nav_ul">
+            <li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
+                <a href="index.html" style="padding:auto;padding-top:17px;">
+                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
+                </a>
+            </li>
+            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
+            <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+            <li class="top_nav_li nav_menu nav_menu_active"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+            <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
+            <li class="top_nav_li" style="padding-top:25px;">
+                <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+            </li>
+            <li class="top_nav_li nav_menu"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
+            <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
+                <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
+            </li>
+        </ul>
+    </div>
+    <div class="top_nav" style="position:static;">
+    </div>
+    <div class="slider_container_new">
+        <img class="banner img-responsive" src="img/img_nature_wide.jpg" style="width:100%">
+              <h1 class="banner_text">Support</h1>
+
+    </div>
+    <article  style="background-color: #fff">
+        <div class="frame">
+            <div class="w3-row-padding" style="padding:30px 30px 40px 30px;">
+                <div class="service-indicator">
+                    <h1 class="support">Support</h1>
+                </div>
+                <div class="tranning-content" style="">
+                    <h3>Postgres support 24/7</h3>
+                    <p>Fujitsu is one of the largest IT service providers in the world, and has been supporting mission-critical databases globally for many years.
+
+
+                    </p>
+                    <p>With 24/7 technical support for critical issue resolution, our highly-experienced support engineers will get your production Postgres database up and running as quickly and seamlessly as possible.
+                    </p>
+                    <p>We realize that not everyone needs 24/7 support. We offer a range of support options and can tailor a support package to your specific needs.
+
+
+                    </p>
+                    <p>We provide:
+                    </p>
+                    <ul>
+                        <li><p>24/7 support for production Postgres databases
+
+</p></li>
+                        <li><p>business hours only support</p></li>
+                        <li><p>ad-hoc support</p></li>
+                        <li><p>email and phone support</p></li>
+                        <li><p>remote support</p></li>
+                        <li><p>on-site support</p></li>
+
+                    </ul>
+                    <p><a href="contact.html" >Contact us </a>to discuss your support requirements or to request a quotation.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+<div class="footer_bar">
+    <div class="footer_bar_left_part">
+        <ul class="footer_bar_left_part_ul">
+          <li><a href="term.html"> Terms of Use </a></li>
+          <li><a href="privacy.html">Privacy Policy </a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer_bar_right_part">
+        <span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
+    </div>
+</div>
+</body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-white";
+}
+
+
+carousel();
+
+function carousel() {
+    showDivs(slideIndex += 1);
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</html>
