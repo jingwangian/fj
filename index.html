@@ -32,11 +32,11 @@
             <li class="top_nav_li nav_menu "><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
             <li class="top_nav_li nav_menu "><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
 
-            <li class="top_nav_li phone" >
+            <li id = "top_nav_phone_log_li" class="top_nav_li" >
             <a href="tel://+6194549191" style="padding-top:25px;"><img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;"></a>
 
             </li>
-          <li class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+          <li id = "top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
           <li class="top_nav_li top_nav_right_log" style="margin-right:10px;padding-top:20px;">
            <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
             </li>
@@ -345,6 +345,8 @@
 
 function myFunction() {
     document.getElementsByClassName("top_nav_ul")[0].classList.toggle("responsive");
+    document.getElementById("top_nav_phone_number_li").style.display='none';
+    document.getElementById("top_nav_phone_log_li").style.display='none';
 }
 
 </script>
