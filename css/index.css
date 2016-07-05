@@ -9,27 +9,47 @@
 
 @font-face {
     font-family: "FujitsuSansBold";
-    src: url("../fonts/FujitsuSansBold.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansBold.ttf") format("truetype")，
+       url("../fonts/FujitsuSansBold.woff")format("woff"),
+         url("../fonts/FujitsuSansBold.eot")format("woff"),
+         url("../fonts/FujitsuSansBold.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansBold.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLight";
-    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype");
+    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype"),
+         url("../fonts/FujitsuSansLight.woff")format("woff"),
+         url("../fonts/FujitsuSansLight.eot")format("woff"),
+         url("../fonts/FujitsuSansLight.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLight.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLightIta";
-    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype"),
+    url("../fonts/FujitsuSansLightIta.woff")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLightIta.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMedium";
-    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype"),
+       url("../fonts/FujitsuSansMedium.woff")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMedium.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMediumIta";
-    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype"),
+           url("../fonts/FujitsuSansMediumIta.woff")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMediumIta.svg#svgFontName') format('svg');
 }
 
 
@@ -159,40 +179,53 @@ h6 .small,
 h1,
 .h1 {
     font-size: 36px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+     font-family: 'FujitsuSans', 'Roboto', sans-serif;
 }
 
 h2,
 .h2 {
     font-size: 36px;
+      font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
 
 h3,
 .h3 {
     font-size: 22px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 h4,
 .h4 {
     font-size: 18px;
+     font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
 
 h5,
 .h5 {
     font-size: 14px;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
 
 h6,
 .h6 {
     font-size: 12px;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
 
 a{
     text-decoration: none;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
 
+p{
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
 
+}
 
 .verticalLine {
     border-left: 2px solid #ff0000;
@@ -217,7 +250,7 @@ p{
     margin-right: 20px;
     content: "";
     max-width:344px;
-    height: 439px;
+    height: 459px;
     position: relative;
 
     display: table;
@@ -242,12 +275,26 @@ p{
 }
 .card-text p {
     line-height: 1.7;
+    position:relative;
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: left!important
+    text-align: left!important;
+    font-family: 'FujitsuSans', 'Roboto', sans-serif;
+
 }
+
+/*.card-text p::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    background:url(/extras/line-clamp_for_non_webkit-based_browsers/ellipsis_bg.png) repeat-y;
+}*/
+
 .right-pad {
     /*        padding-left: 10px;
 */
@@ -259,14 +306,14 @@ p{
 }
 
 .line-clamp {
+    display:box;
   display: -webkit-box;
   display:-moz-box;
+  line-clamp;
   -webkit-line-clamp: 4;
   -moz-line-clamp: 4;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
-
-
 }
 
 .card-padding{
@@ -283,6 +330,8 @@ p{
     height: 40px;
     padding-top: 30px;
     padding:0 8px;
+
+
 }
 .services {
     margin-top: 10px;
@@ -335,7 +384,6 @@ padding-right: 50px;
     border-color: transparent;
     padding: 0px 20px 10px 20px;
     position: absolute;
-    bottom: 15px;
     left: 0;
 
 }
@@ -405,6 +453,14 @@ div.frame {
 .sidebar li a:hover:not(.active) {
     background-color: #555;
     color: white;
+}
+
+
+
+
+.hover-effect:hover{
+text-decoration: none;
+border-bottom: 1px solid #9b9b9b;
 }
 
 

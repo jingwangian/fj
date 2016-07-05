@@ -32,7 +32,7 @@
             <li class="top_nav_li" style="padding-top:25px;">
                 <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
             </li>
-            <li class="top_nav_li nav_menu"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
+            <li class="top_nav_li"><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
             <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
                 <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
             </li>
@@ -41,7 +41,7 @@
     <div class="top_nav" style="position:static;">
     </div>
     <div class="slider_container_new">
-        <img class="banner img-responsive" src="img/img_nature_wide.jpg" style="width:100%">
+        <img class="banner img-responsive" src="img/topimage3.jpg" style="width:100%">
               <h1 class="banner_text">Training</h1>
 
     </div>
@@ -60,16 +60,16 @@
 
                     <ul>
                         <li>
-                            <p> PostgreSQL DBA
-                            </p>
+                            <span> PostgreSQL DBA
+                            </span>
                         </li>
                         <li>
-                            <p> PostgreSQL Developer
-                            </p>
+                            <span> PostgreSQL Developer
+                            </span>
                         </li>
                         <li>
-                            <p> Replication and High Availability
-                            </p>
+                            <span> Replication and High Availability
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -108,36 +108,36 @@
                             <p>The course covers the following topics: </p>
                             <ul>
                                 <li>
-                                    <p>PostgreSQL installation and setup
-                                    </p>
+                                    <span>PostgreSQL installation and setup
+                                    </span>
                                 </li>
                                 <li>
-                                    <p> Advanced PostgreSQL configuration
-                                    </p>
+                                    <span> Advanced PostgreSQL configuration
+                                    </span>
                                 </li>
                                 <li>
-                                    <p>User and security management
-                                    </p>
+                                    <span>User and security management
+                                    </span>
                                 </li>
                                 <li>
-                                    <p>Advanced PostgreSQL administration
-                                    </p>
+                                    <span>Advanced PostgreSQL administration
+                                    </span>
                                 </li>
                                 <li>
-                                    <p> Backup and restore
-                                    </p>
+                                    <span> Backup and restore
+                                    </span>
                                 </li>
                                 <li>
-                                    <p> High availability
-                                    </p>
+                                    <span> High availability
+                                    </span>
                                 </li>
                                 <li>
-                                    <p> Advanced PostgreSQL monitoring
-                                    </p>
+                                    <span> Advanced PostgreSQL monitoring
+                                    </span>
                                 </li>
                                 <li>
-                                    <p> Query performance
-                                    </p>
+                                    <span> Query performance
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -152,12 +152,12 @@
                                 </p>
                                 <ul>
                                     <li style="text-align: justified">
-                                        <p>Advanced SQL - includes PostgreSQL-specific language features, query optimization, query rewriter, rules, triggers, views, scan types, joins, sorts, aggregation, explain, indexes, statistics, common query problems, clustering and reindexing
-                                        </p>
+                                        <span>Advanced SQL - includes PostgreSQL-specific language features, query optimization, query rewriter, rules, triggers, views, scan types, joins, sorts, aggregation, explain, indexes, statistics, common query problems, clustering and reindexing
+                                        </span>
                                     </li>
                                     <li>
-                                        <p> PL/PgSQL procedural language - includes syntax and structure, data types, loops and constructs, exception handling, set returns and diagnostics
-                                        </p>
+                                        <span> PL/PgSQL procedural language - includes syntax and structure, data types, loops and constructs, exception handling, set returns and diagnostics
+                                        </span>
                                     </li>
                                 </ul>
 
@@ -174,28 +174,28 @@
                                     </p>
                                     <ul>
                                         <li>
-                                            <p> Replication concepts
-                                            </p>
+                                            <span> Replication concepts
+                                            </span>
                                         </li>
                                         <li>
-                                            <p>PITR backup and recovery
-                                            </p>
+                                            <span>PITR backup and recovery
+                                            </span>
                                         </li>
                                         <li>
-                                            <p> Warm and hot standby
-                                            </p>
+                                            <span> Warm and hot standby
+                                            </span>
                                         </li>
                                         <li>
-                                            <p> Streaming replication
-                                            </p>
+                                            <span> Streaming replication
+                                            </span>
                                         </li>
                                         <li>
-                                            <p> Slony
-                                            </p>
+                                            <span> Slony
+                                            </span>
                                         </li>
                                         <li>
-                                            <p> Load balancing using pgpool-II
-                                            </p>
+                                            <span> Load balancing using pgpool-II
+                                            </span>
                                         </li>
                                     </ul>
                                      <p><a href="contact.html">Contact us</a> to discuss your training requirements or to request a quotation.
@@ -279,7 +279,7 @@ $(document).ready(function () {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
+            'scrollTop': $target.offset().top
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -293,7 +293,7 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#buttons ul li a').removeClass("active");
+            $('#buttons a').removeClass("active");
             currLink.addClass("active");
         }
         else{

@@ -108,13 +108,13 @@ tr:nth-child(odd){background-color: #fdfdfd}
     margin: 20px;
 }
 .tranning-content li {
-    padding-left: 1em;
-    text-indent: -.7em;
+
     list-style-type: square;
     font-size: 25px;
     color:red;
 }
-.tranning-content li p {
+.tranning-content li span {
+    font-size:22px;
     color:black;
 }
 .tranning-content li:before {

@@ -9,27 +9,47 @@
 
 @font-face {
     font-family: "FujitsuSansBold";
-    src: url("../fonts/FujitsuSansBold.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansBold.ttf") format("truetype")，
+       url("../fonts/FujitsuSansBold.woff")format("woff"),
+         url("../fonts/FujitsuSansBold.eot")format("woff"),
+         url("../fonts/FujitsuSansBold.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansBold.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLight";
-    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype");
+    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype"),
+         url("../fonts/FujitsuSansLight.woff")format("woff"),
+         url("../fonts/FujitsuSansLight.eot")format("woff"),
+         url("../fonts/FujitsuSansLight.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLight.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLightIta";
-    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype"),
+    url("../fonts/FujitsuSansLightIta.woff")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLightIta.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMedium";
-    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype"),
+       url("../fonts/FujitsuSansMedium.woff")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMedium.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMediumIta";
-    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype"),
+           url("../fonts/FujitsuSansMediumIta.woff")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMediumIta.svg#svgFontName') format('svg');
 }
 
 html {
@@ -599,6 +619,7 @@ h6 .small,
     font-weight: normal;
     line-height: 1;
     color: #999999;
+
 }
 
 h1,
@@ -654,7 +675,7 @@ h6 .small,
 h1,
 .h1 {
     font-size: 36px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
 }
 
 h2,
@@ -665,7 +686,7 @@ h2,
 h3,
 .h3 {
     font-size: 22px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
 }
 
 h4,
@@ -686,7 +707,7 @@ h6,
 p {
     margin: 0 0 10px;
     font-size: 22px;
-    font-family:
+    sfont-family: 'FujitsuSans', 'Roboto', sans-serif;
 }
 
 .lead {
@@ -2552,6 +2573,28 @@ select[multiple].input-lg {
     -ms-user-select: none;
     user-select: none;
 }
+
+.btn-tab {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
 
 .btn strong {
     padding: 3px;
@@ -5792,7 +5835,9 @@ footer {
       list-style-position:inside;
 
 }
-.content li p {
+.content li span {
+        font-size:22px;
+
     color:black;
 }
 .content li:before {
@@ -5923,10 +5968,10 @@ hr.style-one {
     max-width: 540px;
     background-color: #EDEDED;
     margin-top: 20px;
-        margin-left: auto;
-            position: relative;
+    margin-left: auto;
+    position: relative;
     display: table;
-        margin-left: 120px;
+    margin-left: 60px;
 
 
 }

@@ -55,8 +55,11 @@ li.nav_menu:hover:not(.active) {
 li.nav_menu_active{
     border-bottom-color: #ff0000;
     border-bottom-style: solid;
-    border-bottom-width: 4px;	
+    border-bottom-width: 4px;
 }
+
+
+
 
 
 li.top_nav_li a:hover:active {
