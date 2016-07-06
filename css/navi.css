@@ -17,6 +17,25 @@
     border-bottom-color: #F7F9F8;
 
 }
+
+.top_nav_menu{
+	margin: 0px 0px 0px 0px;
+/*	border-style: solid;*/
+	border-color: red;
+	float: left;
+	height: 80px;
+	vertical-align:top;		
+}
+
+.top_nav_left_log_part{
+	margin-left: 30px;
+	margin-right: 20px;	
+}
+
+.top_nav_right_log_part{
+	float: right;
+	
+}
 ul.top_nav_ul {
     list-style-type: none;
     margin: 0;
@@ -29,20 +48,14 @@ ul.top_nav_ul {
 li.top_nav_li {
     float: left;
     height: 80px;
-/*    border-style: solid;*/
-
 }
 
 li.top_nav_li a{
     display:inline-block;
-/*    color: white;*/
     text-align: center;
     padding-top: 25px;
-/*    padding-left: 16px;*/
-/*    padding: 10px 16px;*/
     text-decoration: none;
-      transition: 0.3s;
-
+    transition: 0.3s;
 }
 
 li.nav_menu:hover:not(.active) {
@@ -96,13 +109,16 @@ img#img_nav_left_png,img#img_nav_right_png,img#img_nav_phone_png
 
 li.top_nav_right_log{
     float:right;
+	margin-right:10px;
+	padding-top:20px;
+	display: none;
 }
 
 ul.top_nav_ul li.icon {display: none;}
 /*hamberger size*/
 #hamberger{
     font-size: 30px;
-    margin:0px 30px 0 0;
+    margin:0;
 }
 .icon{
     margin-top: 15px;
@@ -112,28 +128,96 @@ ul.top_nav_ul li.icon {display: none;}
     margin-left:10px;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-    .number {
-        display:none;
-    }
+li.hamberger_icon{
+    float:right;
+    margin-right: 10px;
+    padding-top:17px;
+    display: none;
 }
 
 
+@media screen and (max-width:1170px){
+/*	.top_nav_contact_part{
+	display:none;  
+  }*/
+	li.nav_menu a{
+	    font-size: 20px;
+	    color: #322f31;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+	.top_nav_left_log_part{
+		margin-left: 20px;
+		margin-right: 10px;	
+	}
+	.top_nav_right_log{
+		margin-right: 0px;
+	}
+	id#img_nav_phone_png{
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width:1160px){
+  .top_nav_menu_middle{
+  	width: 100%;
+  	display: none;
+  	position: fixed;
+  	top: 80px;
+  }
+  li.nav_menu{
+	background-color: grey;
+	float: none;
+	}
+  	li.top_nav_right_log{
+  		display: none;
+  	}
+  	li.hamberger_icon{
+  		font-size: 30px;
+  		display: block;
+  		float: right;
+  		margin-right: 10px;
+  	}
+  }
+
+@media screen and (min-width:1165px){
+   	li.top_nav_right_log{
+  		display: block;
+  	}
+  	li.nav_menu{
+  		float: left;
+  	}
+/*  	.top_nav_menu_middle{
+  		display: block;
+  	}*/
+}
+
+.top_nav_menu_middle_display{
+	display: block;
+}
 
 /*Navi Responsive */
 /* When the screen is less than 768 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:800px) {
-  ul.top_nav_ul li:not(:first-child) {display: none;
+/*@media screen and (max-width:800px) {
+  .top_nav_menu_middle{
+  	display: none;
   }
-  ul.top_nav_ul li.icon {
+  .top_nav_contact_part{
+	display:none;  
+  }
+
+  ul.top_nav_ul li.top_nav_right_log{
+  	display: none;
+  }
+  ul.top_nav_ul li.hamberger_icon {
     float: right;
-    display: inline-block;
+    display: block;
   }
-}
+}*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:800px) {
+
+/*@media screen and (max-width:800px) {
   ul.top_nav_ul.responsive {position: relative;}
   ul.top_nav_ul.responsive li.icon {
     position: absolute;
@@ -148,8 +232,8 @@ ul.top_nav_ul li.icon {display: none;}
     display: block;
     text-align: left;
     background-color: #F7F9F8;
-/*    border-bottom:1px solid gray;
-*/        width:100%;
+
+    width:100%;
 
   }
   ul.top_nav_ul.responsive li a:hover {
@@ -168,5 +252,5 @@ img#img_nav_right_png{
 
 }
 
-}
+}*/
 

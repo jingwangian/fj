@@ -16,37 +16,42 @@
     <!--    This part is top nav bar-->
 <!--    This part is top nav bar-->
     <div class="top_nav" style="position:fixed; width=100%;">
-        <ul class="top_nav_ul">
-            <li class="top_nav_li top_nav_left_log active" style="margin-left:30px;margin-right:20px;">
-                <a href="index.html" style="padding:auto;padding-top:17px;">
-                <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
-                </a>
-            </li>
-            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
+    	<div class="top_nav_menu top_nav_left_log_part">
+	        <a href="index.html" style="padding:auto;">
+		        <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:80px; width=83px;padding-top:17px;padding-bottom:23px;">
+	        </a>
+    	</div>
+    	<div id="top_nav_menu_middle_id" class="top_nav_menu top_nav_menu_middle">
+	        <ul class="top_nav_ul">
+	            <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+	            <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+	            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+	            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+	            <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+	            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
+	        </ul>
+        </div>
+        <div class="top_nav_menu top_nav_contact_part">
+			<ul class="top_nav_ul">
+	            <li id = "top_nav_phone_log_li" class="top_nav_li" >
+		            <a href="tel://+6194549191" style="padding-top:25px;">
+		            	<img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+		            </a>
+	            </li>
+	          	<li id = "top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+			</ul>        
+        </div>
+        <div class="top_nav_menu top_nav_right_log_part">
+        	<ul class="top_nav_ul">
+				<li class="top_nav_li top_nav_right_log">
+		           <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
+		        </li>
+				<li class="hamberger_icon">
+					<a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+				</li>
+			</ul>
+        </div>
 
-
-            <li class="top_nav_li nav_menu "><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
-            <li class="top_nav_li nav_menu "><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
-            <li class="top_nav_li nav_menu "><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
-            <li class="top_nav_li nav_menu "><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
-            <li class="top_nav_li nav_menu "><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
-            <li class="top_nav_li nav_menu "><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
-
-            <li id = "top_nav_phone_log_li" class="top_nav_li" >
-            <a href="tel://+6194549191" style="padding-top:25px;"><img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;"></a>
-
-            </li>
-          <li id = "top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
-          <li class="top_nav_li top_nav_right_log" style="margin-right:10px;padding-top:20px;">
-           <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
-            </li>
-
-                       <!-- toggle Menu -->
-              <li class="icon">
-                <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
-              </li>
-
-        </ul>
     </div>
 
 
@@ -342,11 +347,9 @@
 <!-- Navi -->
 
 <script>
-
 function myFunction() {
-    document.getElementsByClassName("top_nav_ul")[0].classList.toggle("responsive");
-    document.getElementById("top_nav_phone_number_li").style.display='none';
-    document.getElementById("top_nav_phone_log_li").style.display='none';
+	y=document.getElementById("top_nav_menu_middle_id");
+	y.classList.toggle("top_nav_menu_middle_display");
 }
 
 </script>
@@ -409,15 +412,15 @@ function autoSliderShow() {
 </script>
 </body>
 <script>
-    $(document).ready(function(){
-    $(".zxx_text_overflow_5").each(function(){
-        var maxwidth=23;
-        if($(this).text().length>maxwidth){
-            $(this).text($(this).text().substring(0,maxwidth));
-            $(this).html($(this).html()+'...');
-        }
-    });
-});
+//    $(document).ready(function(){
+//    $(".zxx_text_overflow_5").each(function(){
+//        var maxwidth=23;
+//        if($(this).text().length>maxwidth){
+//            $(this).text($(this).text().substring(0,maxwidth));
+//            $(this).html($(this).html()+'...');
+//        }
+//    });
+//});
 
 
 </script>
