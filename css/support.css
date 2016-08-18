@@ -83,10 +83,12 @@ tr:nth-child(odd){background-color: #fdfdfd}
     background-color: white;
     padding-left: 35px;
 }
+
 .list-deco{
            padding-left:43px;
 
 }
+
 
 .list-deco ul {
     list-style: none;
@@ -99,7 +101,11 @@ tr:nth-child(odd){background-color: #fdfdfd}
     color:red;
 
 }
+.list-deco li p{
 
+    color:#000000;
+
+}
 
 
 .tranning-content ul {
@@ -115,7 +121,6 @@ tr:nth-child(odd){background-color: #fdfdfd}
 }
 .tranning-content li span {
     font-size:22px;
-    color:black;
 }
 .tranning-content li:before {
     list-style-type: square;
@@ -123,9 +128,14 @@ tr:nth-child(odd){background-color: #fdfdfd}
     /* or whatever color you prefer */
 }
 .tranning-content a {
-    font-weight: bolder;
-    color:black;
+    text-decoration: underline;
+
 }
+
+.tranning-bmargin{
+    margin-top: 30px; margin-bottom: 20px;
+}
+
 /*.contact {
     margin:40px 0 40px 0;
 }
@@ -140,4 +150,38 @@ tr:nth-child(odd){background-color: #fdfdfd}
 
 .list-color{
     color:#000;
+    font-weight: bold;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1224px) {
+    /* Styles */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,48 +10,67 @@
     <link type="text/css" rel="stylesheet" href="css/slider.css">
     <link type="text/css" rel="stylesheet" href="css/footer.css">
     <link type="text/css" rel="stylesheet" href="css/support.css">
+    <link rel="icon" type="image/png" href="img/ico.png">
+    <title>Fujitsu PostgreSQL</title>
 </head>
 
 <body>
-    <!--    This part is top nav bar-->
-    <!--    This part is top nav bar-->
-    <div class="top_nav" style="position:fixed; width=100%;">
-        <ul class="top_nav_ul">
-            <li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
-                <a href="index.html" style="padding:auto;padding-top:17px;">
-                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
+    <div id="body_container">
+        <div class="top_nav" style="position:fixed; width=100%;">
+            <div class="top_nav_menu top_nav_left_log_part">
+                <a href="index.html" style="padding:auto;">
+                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:80px; width=83px;padding-top:17px;padding-bottom:23px;">
                 </a>
-            </li>
-            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
-            <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
-            <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
-            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
-            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
-            <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
-            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
-            <li class="top_nav_li" style="padding-top:25px;">
-                <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
-            </li>
-            <li class="top_nav_li "><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
-            <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
-                <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
-            </li>
-        </ul>
-    </div>
-    <div class="top_nav" style="position:static;">
-    </div>
-<!--     <div class="slider_container_new">
-        <img class="banner img-responsive" src="img/topimage9.jpg" style="width:100%">
-                              <h1 class="banner_text">About Fujitsu</h1>
+            </div>
+            <div id="top_nav_menu_middle_id" class="top_nav_menu top_nav_menu_middle">
+                <ul class="top_nav_ul">
+                    <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+                    <li class="top_nav_li nav_menu "><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+                    <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+                    <li class="top_nav_li nav_menu "><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+                    <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+                    <li class="top_nav_li nav_menu shadow-bot"><a href="contact.html" data-toggle="tooltip" data-placement="left">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div class="flex-container">
  -->
-    </div>
-<div class="text_container">
-        <div class="row">
-                 <div class="col-md-11" style="margin-bottom: 40px; padding: 10px 0px 0px 45px ">
+            <div class="top_nav_menu top_nav_contact_part ">
+                <ul class="top_nav_ul">
+                    <li id="top_nav_phone_log_li" class="top_nav_li">
+                        <a href="tel://+6194549191" style="padding-top:25px;">
+                            <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+                        </a>
+                    </li>
+                    <li id="top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top_nav_menu top_nav_right_log_part symbol">
+                <ul class="top_nav_ul">
+                    <li class="top_nav_li top_nav_right_log">
+                        <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
+                    </li>
+<!--                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="top_nav" style="position:static;">
+        </div>
+        <!--     <div class="slider_container_new">
+        <img class="banner img-responsive" src="img/topimage8.jpg" style="width:100%">
+              <h1 class="banner_text">Privacy Policy</h1>
+ -->
+        <div class="frame text_body">
+            <div class="w3-row-padding" style="padding:30px 30px 40px 0px;">
                 <div class="service-indicator">
-                    <h1 class="support" style="margin-top: 20px; margin-left: 0px;">About Fujitsu   </h1></div>
-                <div class="tranning-content">
-                    <p>Fujitsu is the leading Japanese ICT company and the 4th largest ICT service provider in the world, offering a full range of technology products, solutions and services. Established in 1935, Fujitsu is the second oldest IT company after IBM.
+                    <h1 class="support">About Fujitsu</h1>
+                </div>
+                    <div class="tranning-content">
+                        <p>Fujitsu is the leading Japanese ICT company and the 4th largest ICT service provider in the world, offering a full range of technology products, solutions and services. Established in 1935, Fujitsu is the second oldest IT company after IBM.
                     </p>
                     <p>Around 160,000 Fujitsu employees support customers in over 100 countries.
                     </p>
@@ -61,28 +80,34 @@
                     </p>
                     <p>From telecommunications to healthcare, Fujitsu offer IT solutions to improve efficiency, increase productivity and reduce costs.
                     </p>
-                    <p>Visit the Fujitsu global website for more information about Fujitsu, its services and products.
+                      <p><a href="http://www.fujitsu.com/global/">Visit the Fujitsu global website</a> for more information about Fujitsu, its services and products.
                     </p>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="footer-padding" href="term.html"> Terms of Use </a>
+                    <a class="footer-padding" href="privacy.html">Privacy Policy </a>
+                    <a class="footer-padding" href="about.html">About</a>
+                    <a class="footer-padding" href="resources.html">Resources</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <p>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</p>
+            </div>
+        </footer>
     </div>
 
 
-    <div class="footer_bar">
-        <div class="footer_bar_left_part">
-            <ul class="footer_bar_left_part_ul">
-                <li><a href="term.html"> Terms of Use </a></li>
-                <li><a href="privacy.html">Privacy Policy </a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer_bar_right_part">
-            <span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
-        </div>
-    </div>
+
+    <script>
+    function myFunction() {
+        y = document.getElementById("top_nav_menu_middle_id");
+        y.classList.toggle("top_nav_menu_middle_display");
+    }
+    </script>
     <script>
     var slideIndex = 1;
     showDivs(slideIndex);

@@ -1,0 +1,15 @@
+a#aboutsql-long-a{
+    line-height:1.6;
+}
+
+@media screen and (min-width: 473px) and (max-width: 991px) {
+    a#aboutsql-long-a {line-height: 59px}
+}
+
+
+
+
+
+
+
+

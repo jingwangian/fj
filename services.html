@@ -16,316 +16,123 @@
     /*<li><a class="active" href="#migration">Migration</a></li>
                                             <li><a   href="#healthcheck">Health Check</a></li>
                                             <li><a  href="#benchcheck">Bench Check</a></li>
-                                            <li><a  href="#operationsreview">Operation review</a></li>
+                                            <li><a  href="#operationsreview">Operations review</a></li>
                                             <li><a   href="#consulting">Consulting</a></li>*/
     </style>
+    <link rel="icon" type="image/png" href="img/ico.png">
+    <title>Fujitsu PostgreSQL</title>
 </head>
 
 <body>
-    <!--    This part is top nav bar-->
-    <!--    This part is top nav bar-->
+
+    <div id="body_container">
+
     <!--    This part is top nav bar-->
     <div class="top_nav" style="position:fixed; width=100%;">
-        <ul class="top_nav_ul">
-            <li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
-                <a href="index.html" style="padding:auto;padding-top:17px;">
-                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
-                </a>
-            </li>
-            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
-
-
-            <li class="top_nav_li nav_menu nav_menu_active"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
-         <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
-            <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
-            <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
-            <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
-            <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Contact</a></li>
-            <li class="top_nav_li" style="padding-top:25px;">
-                <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
-            </li>
-            <li class="top_nav_li "><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
-            <li class="top_nav_li top_nav_right_log" style="margin-right:10px;padding-top:20px;">
-                <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
-            </li>
-        </ul>
+        <div class="top_nav_menu top_nav_left_log_part">
+            <a href="index.html" style="padding:auto;">
+                <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:80px; width=83px;padding-top:17px;padding-bottom:23px;">
+            </a>
+        </div>
+        <div id="top_nav_menu_middle_id" class="top_nav_menu top_nav_menu_middle">
+            <ul class="top_nav_ul">
+                <li class="top_nav_li nav_menu nav_menu_active"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+                <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+                <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+                <li class="top_nav_li nav_menu"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+                <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+                <li class="top_nav_li nav_menu"><a href="contact.html" data-toggle="tooltip" data-placement="left">Contact</a></li>
+            </ul>
+        </div>
+        <div class="top_nav_menu top_nav_contact_part">
+            <ul class="top_nav_ul">
+                <li id="top_nav_phone_log_li" class="top_nav_li">
+                    <a href="tel://+6194549191" style="padding-top:25px;">
+                        <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+                    </a>
+                </li>
+                <li id="top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="top_nav_menu top_nav_right_log_part">
+            <ul class="top_nav_ul">
+                <li class="top_nav_li top_nav_right_log">
+                    <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
+                </li>
+<!--                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>-->
+            </ul>
+        </div>
     </div>
     <div class="top_nav" style="position:static;">
     </div>
+    <!--    This part is slider bar-->
     <div class="slider_container_new">
         <img class="banner img-responsive" src="img/topimage1.jpg" style="width:100%">
-        <h1 class="banner_text">Services</h1>
+        <h1 class="banner_text">Services - overview</h1>
     </div>
-    <div class="frame">
+    <div class="frame text_body">
         <div class="content-wrapper">
-            <div id="sidebar_container" class="col-md-3">
-                <div id="sidebar_id" class="sidebar" style="position:fixed; top:353px; margin-right:10px;">
+            <div class="sidebar_id">
+            <div id="sidebar_container" class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div id="sidebar_id" class="sidebar" style="position:relative; top:0px; margin-right:10px;">
                     <ul id="buttons">
-                        <li><a class="active" href="#migration">Migration</a></li>
-                        <li><a href="#healthcheck">Health Check</a></li>
-                        <li><a href="#benchcheck">Bench Check</a></li>
-                        <li><a href="#operationsreview">Operation review</a></li>
-                        <li><a href="#consulting">Consulting</a></li>
+                        <li><a class="active" href="services.html">Overview</a></li>
+                        <li><a href="migration.html">Migration</a></li>
+                        <li><a href="healthcheck.html">Health check</a></li>
+                        <li><a href="benchcheck.html">Bench check</a></li>
+                        <li><a href="operationsreview.html">Operations review</a></li>
+                        <li><a href="consulting.html">Consulting</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9" style="padding-right: 10px;padding-left: 45px; margin-bottom: 33px; ">
-                <div class="content" style="width:95%;margin-top: -10px;">
-                    <h3>Fujitsu offers an extensive range of PostgreSQL services:</h3>
-                    <ul>
-                        <li>
-                            <span>Enterprise-level support and service agreements
-                            </span>
-                        </li>
-                        <li>
-                            <span>Combined services, support and training packages
-                            </span>
-                        </li>
-                        <li>
-                            <span>Installation and configuration of PostgreSQL databases
-                            </span>
-                        </li>
-                        <li>
-                            <span>Startup and ongoing tuning of the databases
-                            </span>
-                        </li>
-                        <li>
-                            <span>Capacity management, risk assessment and secure DB implementation
-                            </span>
-                        </li>
-                        <li>
-                            <span>Health check services for databases
-                            </span>
-                        </li>
-                        <li>
-                            <span>Backup and disaster recovery planning and implementation
-                            </span>
-                        </li>
-                        <li>
-                            <span>High-availability database design and implementation
-                            </span>
-                        </li>
-                        <li>
-                            <span>Migration services from other major vendor databases
-                            </span>
-                        </li>
-                        <li>
-                            <span>Support also includes PostgreSQL tools such as pgpool-II, Slony and rubyrep
-                            </span>
-                        </li>
-                    </ul>
-                    <hr class="style-one">
-                    <div id="migration">
-                        <div class="service-indicator">
-                            <h2>Migration</h2></div>
-                        <div class="shift">
-                            <h3>Reduce your database costs by 80% or more</h3>
-                            <p>By migrating to FUJITSU Enterprise Postgres, your organization can leverage one of the most widely used, mission-critical databases available, and reduce its database costs by more than 80% without compromising quality, reliability or performance. Free yourself from vendor lock-in and spiraling fees!</p>
-                            <div id="line"><img class="img-responsive" src="img/Group 5.png" alt="migration"></div>
-                            <h3>Fujitsu&#x27;s database migration services</h3>
-                            <p>Fujitsu offers a range of database migration services, from migration assessment, to actual migration, ongoing support, and training.</p>
-                            <p>Fujitsu can assess all major vendor databases and advise alternatives that will provide significant cost savings.</p>
-                            <p>Migration is much easier than you might think!
-                            </p>
-                            <h3>Database Migration Assessment
-                </h3>
-                            <p>FDatabase Migration Assessment is a Fujitsu service that your organization can use to determine the feasibility of migrating your database to FUJITSU Enterprise Postgres. It will give a clear picture of what is required to migrate your database:
-                            </p>
-                            <ul>
-                                <li>
-                                    <span>what can be migrated automatically without modification
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>what needs to be modified
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>what resources will be required</span>
-                                </li>
-                            </ul>
-                            <p>The Database Migration Assessment consists of three simple steps:</p>
-                            <ul>
-                                <li>
-                                    <span>The customer provides the database schema files, which include SQL statements (DDLs of all the database objects and stored procedures), and the application source code.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Fujitsu performs the migration analysis. An experienced consultant with the help of our proven migration assessment tool will analyze your organization’s database environment, assessing the infrastructure, schema and applications.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Fujitsu produces the Database Migration Assessment report. This report will show if your database is suitable for migration to FUJITSU Enterprise Postgres. Once that has been established, and you would like to proceed further, we will provide a migration roadmap to ensure smooth and effective end-to-end migration to FUJITSU Enterprise Postgres, and provide the estimated cost of migration.</span>
-                                </li>
-                            </ul>
-                            <h3>Database Migration Assessment process</h3>
-                            <div id="line"><img class="img-responsive" src="img/migration.png" alt="Database Migration"></div>
-                            <h3>Database Migration Assessment report sample</h3>
-                            <div id="line"><img class="img-responsive" src="img/Assessment.png" alt="Database Migration Assessment report"></div>
-                            <h3>Database migration process</h3>
-                            <p>Fujitsu can assist in the key steps of the migration process:</p>
-                            <ul>
-                                <li>
-                                    <span>Migration assessment
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Migration strategy
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Migration of the database schema</spanp>
-                                </li>
-                                <li>
-                                    <span>Migration of the data</span>
-                                </li>
-                                <li>
-                                    <span>Verification</span>
-                                </li>
-                            </ul>
-                            <p>Our experienced consultants are at hand to help you when you need it.</p>
-                            <p><a href="contact.html">Contact us </a>to discuss the benefits of database migration and the services we provide.
-                            </p>
-                        </div>
-                    </div>
-                    <hr class="style-one">
-                    <div id="healthcheck">
-                        <div class="service-indicator">
-                            <h2>Health Check</h2></div>
-                        <div class="shift">
-                            <h3>Let Fujitsu identify and resolve potential issues with your Postgres database before they become a problem</h3>
-                            <p>A health check is preventive maintenance for your Postgres database. It is used to determine the likelihood of issues occurring with your Postgres database and infrastructure that may affect system performance, security and stability, and may adversely affect your business operations.</p>
-                            <p><strong>About the health check</strong></p>
-                            <p>We understand that every system is different and accordingly, we tailor the health check to your specific configuration and requirements.</p>
-                            <p>A health check includes:</p>
-                            <ul>
-                                <li>
-                                    <span>System diagnostics, identifying potential issues such as memory overflows, CPU and I/O bottlenecks, and network traffic and connection issues.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Evaluation of the operating system configuration. This includes I/O scheduling, memory and buffer/cache, security and network tuning.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>Analysis of the Postgres setup. This includes postgresql.conf evaluation and tuning, feasibility evaluation for upgrading to the latest version of Postgres, audit of Postgres memory use and suitability of the existing hardware configuration.</span>
-                                </li>
-                                <li>
-                                    <span>Storage infrastructure recommendations. This determines whether storage configuration upgrades (such as using a different RAID level or purchasing SAN hardware) would enhance performance and provide a benefit for the client.</p>
-                                </li>
-                            </ul>
-                            <p><strong>Health check outcome</strong></p>
-                            <p>We reveal areas of weakness and provide an action plan and best practice guidelines to ensure that your system is optimally configured and tuned, and is able to scale to meet future business needs.</p>
-                            <p>And of course we can help you implement the recommendations laid out in the health check.</p>
-                            <p><a href="contact.html">Contact us </a>to discuss the benefits of a health check or to request a quotation.
-                            </p>
-                        </div>
-                        <hr class="style-one">
-                    </div>
-                    <div id="benchcheck">
-                        <div class="service-indicator">
-                            <h2>Bench Check</h2></div>
-                        <h3>Let Fujitsu identify infrastructure bottlenecks and provide solutions
-                </h3>
-                        <p>Fujitsu provides a benchmarking service to help determine if your database system is able to withstand stress and meet performance goals.</p>
-                        <p><strong>About database benchmarking
-                </strong></p>
-                        <p>The purpose of database benchmarking is to measure the throughput and response times of database management systems, the results of which are compared against industry standards.</p>
-                        <p><strong>About the bench check
-                </strong></p>
-                        <p>A bench check is a benchmarking program tailored by Fujitsu consultants to suit your specific configuration and workload. We capture real-time traffic and simulate database load under a variety of situations. We use transaction and CPU monitors to help provide the required information.
-                        </p>
-                        <p>A bench check includes a review of the following:</p>
-                        <ul>
-                            <li>
-                                <span>Cloud configuration
-                                </span>
-                            </li>
-                            <li>
-                                <span>Database configuration
-                                </span>
-                            </li>
-                            <li>
-                                <span>Architectural design</span>
-                            </li>
-                        </ul>
-                        <p><strong>Bench check outcome
-                </strong></p>
-                        <p>Apart from the results of the benchmarking tests, we provide a report outlining potential issues identified during the benchmark tests, such as CPU and I/O bottlenecks. We provide solutions to help avoid and resolve those issues, and best practice guidelines to help streamline your operations.
-                        </p>
-                        <p><a href="contact.html">Contact us </a>to discuss the benefits of a bench check or to request a quotation.
-                        </p>
-                    </div>
-                    <hr class="style-one">
-                    <div id="operationsreview">
-                        <div class="service-indicator">
-                            <h2>Operations Review</h2></div>
-                        <div class="shift">
-                            <h3>Let Fujitsu help streamline your operations through best practice methodologies
-                </h3>
-                            <p>An operations review examines how a company works and how it can become more efficient.</p>
-                            <p><strong>About the operations review
-                </strong></p>
-                            <p>We evaluate your current database practices against leading examples to streamline your operations and improve efficiency.
-                            </p>
-                            <p>During this comprehensive analysis, a Fujitsu PostgreSQL specialist examines the current procedures and processes of your PostgreSQL instances to identify if best practices have been followed. If required this can entail analysis of performance bottlenecks, a review of schemas, advice on backup procedures, and the suitability of replication solutions.</p>
-                            <p><strong>Operations review outcome
-                </strong></p>
-                            <p>We provide an action plan to develop and implement improvement processes, so your organization will save time and money, and improve business efficiency. The aim is to continually improve efficiency to support the overall goals of your business.</p>
-                            <p><a href="contact.html">Contact us </a>to discuss the benefits of an operations review or to request a quotation.
-                            </p>
-                        </div>
-                    </div>
-                    <hr class="style-one">
-                    <div id="consulting">
-                        <div class="service-indicator">
-                            <h2>Consulting</h2></div>
-                        <div class="shift">
-                            <h3>Professional consulting services for all your Postgres needs
-                </h3>
-                            <p>Fujitsu consultants are here to provide advice and support with the following:
-                            </p>
-                            <ul>
-                                <li>
-                                    <span>Strategic planning for new and established users of open source software
-                                    </span>
-                                </li>
-                                <li>
-                                    <span> Database modelling and optimization
-                                    </span>
-                                </li>
-                                <li>
-                                    <span> Rollout planning, resourcing, management, and implementation
-                                    </span>
-                                </li>
-                                <li>
-                                    <span> Database and business application problem-solving
-                                    </span>
-                                </li>
-                            </ul>
-                            <p>Fujitsu&#x27;s consultants work at the enterprise, program, and project levels, and support clients through the full life cycle of their open source initiatives.
-                            </p>
-                            <p><a href="contact.html">Contact us </a>if you would like to discuss our consulting services in more detail.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+                <div class="migration-content">
+                    <!--                     <h3>Fujitsu offers an extensive range of PostgreSQL services:</h3>
+ -->
+                    <p style=" padding-top: 10px;">Fujitsu is a leading global provider of IT services, and has the experience and resources needed to provide effective solutions for Postgres users and organizations looking for an open source alternative to their current database.
+                    </p>
+                    <p>We offer the following services:</p>
+                    <h3>Database migration</h3>
+                    <p>Fujitsu can show how your organization can leverage one of the most widely used, mission-critical databases available, and reduce its database costs significantly without compromising quality, reliability or performance.</p>
+                    <h3>Health check</h3>
+                    <p>
+                        Fujitsu can identify and help resolve potential issues with your Postgres database before they become a problem.
+                    </p>
+                    <h3>Bench check </h3>
+                    <p>Fujitsu can test the performance of your Postgres database to determine how it compares against industry standards. We can help resolve the issues identified during the benchmark tests.</p>
+                    <h3>Operations review
+</h3>
+                    <p>Fujitsu can help streamline your organization's operations through best practice methodologies.
+                    </p>
+                    <h3>Consulting
+</h3>
+                    <p>Fujitsu provides professional consulting services for all your Postgres needs &#8208; from rollout planning, installation, configuration and tuning, to strategic planning, problem&#8208;solving, and more.</p>
+                    <!-- Consulting -->
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer_bar">
-        <div class="footer_bar_left_part">
-            <ul class="footer_bar_left_part_ul">
-                <li><a href="term.html"> Terms of Use </a></li>
-                <li><a href="privacy.html">Privacy Policy </a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    
+</div>
+<footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="footer-padding" href="term.html"> Terms of Use </a>
+                <a class="footer-padding" href="privacy.html">Privacy Policy </a>
+                <a class="footer-padding" href="about.html">About</a>
+                <a class="footer-padding" href="resources.html">Resources</a>
+            </p>
         </div>
-        <div class="footer_bar_right_part">
-            <span>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</span>
+        <div class="footer-right">
+            <p>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</p>
         </div>
-    </div>
+</footer>
+
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -333,27 +140,35 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- FIXED SIDEBAR -->
+    <!-- menu -->
+    <script>
+    function myFunction() {
+        y = document.getElementById("top_nav_menu_middle_id");
+        y.classList.toggle("top_nav_menu_middle_display");
+    }
+    </script>
     <script type="text/javascript">
-    $(function() {
-        var $sidebar = $("#sidebar_id"),
-            $window = $(window),
-            offset = $sidebar.offset(),
-            topPadding = 80;
+    // $(function() {
+    //     var $sidebar = $("#sidebar_id"),
+    //         $window = $(window),
+    //         offset = $sidebar.offset(),
+    //         topPadding = 80;
 
-        $window.scroll(function() {
-            cur_scrollTop = $window.scrollTop();
-            if (cur_scrollTop < offset.top - 100) {
-                document.getElementById("sidebar_id").style.position = "absolute";
-                document.getElementById("sidebar_id").style.top = "0px";
-            } else {
+    //     $window.scroll(function() {
+    //         cur_scrollTop = $window.scrollTop();
+    //         if (cur_scrollTop < offset.top - 100) {
+    //             document.getElementById("sidebar_id").style.position = "absolute";
+    //             document.getElementById("sidebar_id").style.top = "0px";
+    //         } else {
 
-                document.getElementById("sidebar_id").style.position = "fixed";
-                document.getElementById("sidebar_id").style.top = "100px";
+    //             document.getElementById("sidebar_id").style.position = "fixed";
+    //             document.getElementById("sidebar_id").style.top = "100px";
 
-            }
-        });
+    //         }
+    //     });
 
-    });
+    // });
+    //
     </script>
     <script>
     // $(function () {
@@ -364,37 +179,37 @@
     // });
     //
     //
-    $(document).ready(function() {
-        $(document).on("scroll", onScroll);
+    // $(document).ready(function() {
+    //     $(document).on("scroll", onScroll);
 
-        //smoothscroll
-        $('a[href^="#"]').on('click', function(e) {
-            e.preventDefault();
-            $(document).off("scroll");
+    //     //smoothscroll
+    //     $('a[href^="#"]').on('click', function(e) {
+    //         e.preventDefault();
+    //         $(document).off("scroll");
 
-            $('a').each(function() {
-                $(this).removeClass('active');
-            })
-            $(this).addClass('active');
+    //         $('a').each(function() {
+    //             $(this).removeClass('active');
+    //         })
+    //         $(this).addClass('active');
 
-            var target = this.hash,
-                menu = target;
-            $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top + 2
-            }, 500, 'swing', function() {
-                window.location.hash = target;
-                $(document).on("scroll", onScroll);
-            });
-        });
-    });
+    //         var target = this.hash,
+    //             menu = target;
+    //         $target = $(target);
+    //         $('html, body').stop().animate({
+    //             'scrollTop': $target.offset().top + 2
+    //         }, 500, 'swing', function() {
+    //             window.location.hash = target;
+    //             $(document).on("scroll", onScroll);
+    //         });
+    //     });
+    // });
 
     function onScroll(event) {
         var scrollPos = $(document).scrollTop();
         $('#buttons a').each(function() {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top<= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('#buttons ul li a').removeClass("active");
                 currLink.addClass("active");
             } else {

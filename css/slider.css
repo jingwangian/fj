@@ -1,12 +1,14 @@
     div.slider_container {
     font-size: large;
     position: relative;
-    height: 100%;
+    height: 300px;
+    overflow: hidden; /*wj add */
+
 }
 
 img.mySlides {
     min-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 @media screen and (max-width:768px) {
@@ -34,15 +36,33 @@ img.mySlides {
     }
 }
 */
+
+
+@media screen and (max-width:768px) {
+    .slider_container_new {
+        font-size: large;
+        position: relative;
+        height: auto;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 div.slider_container_new {
     font-size: large;
     position: relative;
     height: 250px;
+        overflow: hidden; /*wj add */
+
 }
 
 img.banner {
-    width: 100%;
-    height: 250px;
+
+       min-width: 100%;
+    height: auto;
 }
 
 .banner_text {
@@ -51,7 +71,8 @@ img.banner {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     top: 80px;
     left: 100px;
-    width: 250px;
+    width:auto;
+    line-height: 1.2;
 }
 
 div.slider_bottom {
@@ -64,7 +85,7 @@ div.slider_bottom {
 
 img.slider_bottom_left_png {
     height: 30px;
-    width: 3%;
+    width: 50px;
     margin: 0px;
     margin-top: 15px;
     margin-left: 30px;
@@ -79,6 +100,7 @@ div.slider_bottom_text_container {
     width: 80%;
     vertical-align: top;
     float: left;
+    min-width: 250px;
 }
 
 div.slider_bottom_text {
@@ -100,6 +122,15 @@ div.slider_bottom_text {
     white-space: nowrap;
     overflow: hidden;
 }
+
+div.slider_bottom_text span a{
+   color:#ffffff;
+}
+
+
+
+
+
 
 .more-padding {
     padding-left: 40px;
@@ -159,7 +190,7 @@ div.slider_fixed_box_text {
 
 div.slider_changed_box {
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 350px;
     max-width: 800px;
     height: 300px;
@@ -188,7 +219,7 @@ p.sliders_text_body {
 .sliders_text_button {
     font-size: 18px;
     margin: 0px;
-    margin-top: -10px;
+    margin-top: 0px;
     color: #ffffff;
     display: inline-block;
     margin-bottom: 0;
@@ -272,23 +303,37 @@ p.sliders_text_body {
         top: 35px;
         max-width: 350px;
         height: 300px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
     .sliders_text_button,
     .btn-lg,
     .btn-default {
-        top: 50px;
+        top: 10px;
     }
+    .banner_text{
+        left: 30px;
+    } 
 }
 
-@media screen and (max-width: 900px) {
-    .slider_angles {
+
+@media screen and (min-width: 1023px) {
+/*    .rotate{
+        display: none;
+    }*/
+
+}
+
+@media screen and (max-width: 1024px)  {
+    .slider_angles{
         display: none;
     }
+  
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 767px) {
     .slider_fixed_box_png,
     .slider_fixed_box_text,
     .slider_angles {
@@ -301,8 +346,6 @@ p.sliders_text_body {
         right: 30px;
         max-width: 350px;
         height: 300px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .slider_bottom_text {
         height: 60px;
@@ -316,6 +359,22 @@ p.sliders_text_body {
         vertical-align: middle;
         margin-top: 20px;
     }
+        .sliders_text_button,
+    .btn-lg,
+    .btn-default {
+        top: 10px;
+    }
+
+    img.slider_bottom_left_png {
+    height: 30px;
+    width: 50px;
+    margin: 0px;
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    display: inline-block;
+}
 }
 
 
@@ -326,7 +385,7 @@ p.sliders_text_body {
     div.slider_changed_box {
         position: absolute;
         top: 35px;
-        left: 30px;
+        left:350px;
         right: 30px;
         max-width: 700px;
         height: 300px;
@@ -336,8 +395,43 @@ p.sliders_text_body {
     .sliders_text_button,
     .btn-lg,
     .btn-default {
-        top: 50px;
+        top: 10px;
     }
+
+   div.slider_bottom_text_container {
+    display: inline-flex;
+    margin-left: -5px;
+    width: 80%;
+    vertical-align: top;
+    float: left;
+}
+    .rotate{
+        display:block;
+        max-width:1000px;
+
+    }
+   .slider_angles,.slider_bottom_text_container span a{
+/*        display: none;*/
+    }
+
+    .rotate{
+        display:block;
+        max-width:1000px;
+            float:left;
+
+    }
+    .rotate ul li a{
+     position:relative;
+    height:30px;
+    width:600px;
+    color:#ffffff;
+    font:normal 20px "FujitsuSans";
+    text-align:left;
+    text-decoration:none;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:inline-block;
 }
 
 
@@ -345,18 +439,50 @@ p.sliders_text_body {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     /* Styles */
+
+        div.slider_changed_box {
+        position: absolute;
+        top: 35px;
+        left:260px;
+        right: 30px;
+        max-width: 700px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     div.slider_fixed_box_png {
         position: absolute;
         top: 20px;
         left: 30px;
     }
+
     div.slider_fixed_box_text {
         position: absolute;
         top: 30px;
         left: 50px;
         font-family: 'FujitsuSans', 'Roboto', sans-serif;
     }
+
+    .sliders_text_button,
+    .btn-lg,
+    .btn-default {
+        top: 10px;
+    }
 }
+}
+
+
+@media screen and (max-width: 565px) {
+    .banner_text{
+        top:50px;
+    }
+}
+
+/*@media screen and (max-width: 400px) {
+    div.slider_bottom_text_container{
+        display: none;
+    }
+}*/
 
 .slider_indicator_dot:hover {
     color: #ff0000!important;
