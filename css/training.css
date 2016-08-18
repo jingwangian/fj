@@ -1,0 +1,40 @@
+/*.tranning-content {
+    background-color: white;
+    padding-left: 25px;
+}
+.tranning-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.tranning-content li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    list-style-type: square;
+    font-size: 25px;
+    color:red;
+}
+.tranning-content li p {
+    color:black;
+}
+.tranning-content li:before {
+    list-style-type: square;
+    color: red;
+
+}
+.tranning-content a {
+    font-weight: bolder;
+    color:black;
+}*/
+
+
+a#training-long-a{
+    line-height:59px;
+}
+
+@media screen and (min-width:970px) and (max-width: 1223px) {
+    a#training-long-a {line-height: 1.6}
+}
+@media screen and (max-width:300px){
+a#training-long-a {line-height: 1.6}
+}

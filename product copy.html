@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/w3c.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/navi.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <link type="text/css" rel="stylesheet" href="css/support.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- FIXED SIDEBAR -->
+    <style type="text/css" media="screen">
+    .tb-padding {
+        vertical-align: middle;
+    }
+
+    .tab-background {
+        color: #ff0000;
+    }
+
+
+
+
+    #active{
+        border-color: #ff0000;
+        color: #ff0000;
+    }
+    </style>
+    <link rel="icon" type="image/png" href="img/ico.png">
+    <title>Fujitsu PostgreSQL</title>
+</head>
+
+<body>
+    <!--    This part is top nav bar-->
+    <div class="top_nav" style="position:fixed; width=100%;">
+        <ul class="top_nav_ul">
+            <li class="top_nav_li top_nav_left_log" style="margin-left:30px;margin-right:20px;">
+                <a href="index.html" style="padding:auto;padding-top:17px;">
+                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:40px; width=83px;">
+                </a>
+            </li>
+            <li id="nav_menu_show" class="top_nav_li nav_dropdown_menu"><a href="#menu">Menu</a></li>
+            <li class="top_nav_li nav_menu "><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+            <li class="top_nav_li nav_menu "><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+            <li class="top_nav_li nav_menu "><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+            <li class="top_nav_li nav_menu nav_menu_active"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+            <li class="top_nav_li nav_menu "><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+            <li class="top_nav_li nav_menu "><a href="contact.html" data-toggle="tooltip" data-placement="left">Contact</a></li>
+            <li class="top_nav_li" style="padding-top:25px;">
+                <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+            </li>
+            <li class="top_nav_li "><a href="#contact" style="margin-left:10px;">+61 2 9454 9191</a></li>
+            <li class="top_nav_li top_nav_right_log" style="margin-right:20px;padding-top:20px;">
+                <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="" style="height:40px;width:175px;">
+            </li>
+        </ul>
+    </div>
+    <div class="top_nav" style="position:static;">
+    </div>
+    <div class="slider_container_new">
+        <img class="banner img-responsive" src="img/topimage4.jpg" style="width:100%">
+              <h1 class="banner_text">Product</h1>
+
+    </div>
+    <!--  -->
+    <div frame>
+
+
+        <div id="product-services_id" class="product-services">
+        <div class="text_container" style="background-color: #dcdcd4;">
+            <div class="third" >
+                <div class="prodcut">
+                    <ul class="product-navbar" id="tab">
+
+                        <li> <a class="btn-tab btn-product tablink" onclick="openCity(event,'enterprise')">FUJITSU Enterprise Postgres</a></li>
+                            <li class="barLine"></li>
+                         <li> <a class="btn-tab btn-product tablink" onclick="openCity(event,'sql')">PostgreSQL</a></li>
+                            <li class="barLine"></li>
+
+                        <li> <a class="btn-tab btn-product tablink" onclick="openCity(event,'feature')">Feature Comparision</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </div>
+    <!-- / .services -->
+    <div class="text_container">
+        <div class="row">
+            <div id="enterprise" class="product-container city">
+                <div class="content-wrapper" style="margin-top: 30px;">
+                    <div id="sidebar_container" class="col-md-3">
+                        <div id="enterprise_sidebar" class="sidebar" style="position:relative; top:0px; padding:0px 30px;margin-right: 30px;">                            <ul id="buttons">
+                                <li><a class="active" href="#overview">Overview</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#whatsnew">What's New?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="margin-left: 20px; margin-bottom: 30px; " >
+                        <div class="content">
+                            <div id="overview">
+                                <div class="service-indicator">
+                                    <h1 class="support">Overview</h1></div>
+                                <div class="tranning-content" >
+                                    <p>FUJITSU Enterprise Postgres 9.5 is Fujitsu&#x27;s fastest database management system yet, combining the strengths of open source PostgreSQL with significantly improved performance, security, operability and usability. FUJITSU Enterprise Postgres is an enterprise-grade database that is compatible with PostgreSQL and offers considerable cost savings over other major vendor databases, without vendor lock-in.</p>
+                                    <p>FUJITSU Enterprise Postgres is the evolution of Fujitsu&#x27;s extensive experience developing enterprise databases for over 35 years and of its contributions to and involvement in the PostgreSQL open source community.</p>
+                                </div>
+                            </div>
+                            <hr class="style-one">
+                            <div id="features">
+                                <div class="service-indicator">
+                                    <h1 class="support">Features</h1></div>
+                                <div class="tranning-content">
+                                    <p>FUJITSU Enterprise Postgres extends PostgreSQL with additional features such as:</p>
+                                    <ul>
+                                        <li>
+                                            <span>One-click backup and recovery
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span> Secure 256-bit transparent data encryption (PCI-DSS compliant)
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Data masking
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Parallel scanning and aggregation
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>In-Memory Column Store (IMCS) (*)
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Parallel scanning and aggregation
+                                                <br> Query performance can be exponentially improved based on the number of cores by distributing the query execution process over multiple CPU cores.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>WAL duplication
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>DB mirroring controller
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Enhanced Oraclentroller(IMCS) ionncryption (PCI-DSS
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Enhanced GUI cluster management console
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>System usage statistics
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <p>* IMCS is a technology of Fujitsu Laboratories Ltd
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="style-one">
+                            <div id="whatsnew">
+                                <div class="service-indicator">
+                                    <h1 class="support">What&#x27;s New in FUJITSU Enterprise Postgres 9.5?</h1></div>
+                                <div class="tranning-content" >
+                                    <h3>Lightning-fast performance with In-Memory Column Store</h3>
+                                    <p>
+                                        The In-Memory Column Store (IMCS) engine, developed by Fujitsu Laboratories Ltd, is integrated with FUJITSU Enterprise Postgres, and provides significantly faster analytical query processing by storing a columnar representation of row-oriented data in memory. On a single server with 15 CPU cores, performance is at least 50 times faster than before.
+                                    </p>
+                                    <p>IMCS instantly reflects updated row-oriented data to its columnar equivalent, stores it without being dependent on memory capacity, and quickly conducts analysis of that data. Massive volumes of column-oriented data can be stored by taking advantage of this new technique for managing data.
+                                    </p>
+                                    <h3>Data masking for increased data security</h3>
+                                    <p>With the new data masking feature, sensitive data such as credit card numbers, bank account details and other sensitive personal information can be masked. Different privileges-different views-the same data-enables employees in a bank call center, for example, to see a restricted view of sensitive data, whereas employees in a bank branch can see a full view of all the customer information.
+                                    </p>
+                                    <p>The data masking feature can be implemented in a variety of methods, including: character shuffling, nulling or deletion, encryption, masking, and word substitution.
+                                    </p>
+                                    <p>FUJITSU Enterprise Postgres uses masking policies to obscure data using a variety of masking methods, including: character shuffling, nulling or deletion, encryption, masking, and word substitution.
+                                    </p>
+                                    <p>Data masking makes it safe to use production data in a testing or development environment.</p>
+                                    <h3>Simplified operation with WebAdmin</h3>
+                                    <p>FUJITSU Enterprise Postgres provides an enhanced WebAdmin cluster management console. The WebAdmin GUI has been redesigned to improve the user experience with a simpler, more intuitive design for tasks such as FUJITSU Enterprise Postgres setup, database backups and recovery.
+                                    </p>
+                                    <p>New features include:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <span>Centralized administration of the database instances running on multiple server machines</span>
+                                        </li>
+                                        <li>
+                                            <span>Comprehensive and easy-to-use credential management</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Replication functionality in various configuration modes
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <h3>Parallel scanning and aggregation for faster query processing</h3>
+                                    <p>The new parallel scanning and aggregation features also provide significant performance improvements&#8208;query performance can be exponentially improved based on the number of cores by distributing the query execution process over multiple CPU cores.
+                                    </p>
+                                    <p>Parallel scanning and aggregation are execution features that the query planner can automatically use. They use available resources within the server to speed up scanning and aggregation.
+                                    </p>
+                                    <h3>PostgreSQL 9.5 features</h3>
+                                    <p>FUJITSU Enterprise Postgres includes the new features in PostgreSQL 9.5, which was released in January 2016:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                         <h3 class="list-color">Row level security</h3>                                        </li>
+                                        <p>This feature enables security policies to be set to restrict, filter or control access to the data.
+                                        </p>
+                                        <li>
+                                         <h3 class="list-color"> UPSERT</h3>                                        </li>
+                                        <p>This feature has been requested by many application developers for years, and PostgreSQL 9.5 delivers. It enables the database to handle conflicts between concurrent data changes. This allows legacy MySQL applications to be migrated to PostgreSQL.
+                                        </p>
+                                        <li>
+                                           <h3 class="list-color">   Big Data features</h3>
+                                        </li>
+                                        <p>PostgreSQL 9.5 includes multiple Big Data features such as faster sorts, foreign data wrappers (FDWs), TABLESAMPLE, CUBE, ROLLUP, GROUPING SETS, and BRIN indexing.
+                                        </p>
+                                    </ul>
+                                    <p>Refer to <a href="https://www.postgresql.org/about/news/1636/" style="color:#ff0000">http://www.postgresql.org/about/news/1636/</a> for details on all that&#x27;s new in PostgreSQL 9.5.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="text_container">
+            <div class="row">
+            <div id="sql" class="product-container city" style="display:none">
+                    <div class="content-wrapper">
+                        <div id="sidebar_container" class="col-md-3">
+                        <div id="sql_sidebar" class="sidebar" style="position:fixed; top:460px; padding:0px 30px;margin-right: 30px;">
+                                <ul id="buttons">
+                                    <li><a class="active" href="#about">About PostgreSQL</a></li>
+                                    <li><a href="#contrib">Fujitsu&#x27;s contribution to PostgreSQL</a></li>
+                                    <li><a href="#open" style="line-height: 1.6">Fujitsu and the PostgreSQL open source community</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-md-8" style="margin-left: 20px; margin-bottom: 30px;" >
+                            <div class="content">
+                                <div id="about">
+                                    <div class="service-indicator">
+                                        <h1 class="support">About PostgreSQL</h1></div>
+                                    <div class="tranning-content">
+                                        <p>PostgreSQL is the world&#x27;s most advanced open source relational database system (RDBMS); it provides the enterprise-level security, functionality, reliability and performance you can find only in advanced DBMSs, but at a fraction of the cost of major proprietary databases.
+                                        </p>
+                                        <p>PostgreSQL is the 4th most used database in the world.</p>
+                                        <p>PostgreSQL provides:</p>
+                                        <ul>
+                                            <li>
+                                                <span> Exceptional performance
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Legendary reliability and stability
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Low total cost of ownership (TCO)
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Advanced PostgreSQL administration
+                                                </span>
+                                            </li>
+                                            <p>It is:</p>
+                                            <li>
+                                                <span> Feature-rich and standards compliant
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Feature-rich and standards compliant
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Highly customizable
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span> Used by millions of users globally
+                                                </span>
+                                            </li>
+                                            <p>It has:</p>
+                                            <li>
+                                                <span> A massive global community of PostgreSQL developers
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <p><a href="https://www.postgresql.org/">Visit the PostgreSQL website </a>for more information about PostgreSQL.
+                                        </p>
+                                    </div>
+                            <hr class="style-one">
+                                    <div id="contrib">
+                                        <div class="service-indicator">
+                                            <h1 class="support">Fujitsu&#x27;s contribution to PostgreSQL</h1>
+                                        </div>
+                                        <div class="tranning-content">
+                                            <p>Fujitsu has been an active participant in open source development for over 35 years. As a long-term contributor to the development of open source database systems, Fujitsu is proud of its commitment to the promotion of PostgreSQL as a world-class enterprise database.
+                                            </p>
+                                        </div>
+                                    </div>
+                            <hr class="style-one">
+                                    <div id="open">
+                                        <div class="service-indicator">
+                                            <h1 class="support">Fujitsu and the PostgreSQL open source community</h1></div>
+                                        <div class="tranning-content">
+                                            <p>
+                                                Fujitsu has been supporting PostgreSQL and the PostgreSQL open source community in various ways since 2004.
+                                            </p>
+                                            <p>We have provided our ongoing support through various engagements with the PostgreSQL development community, including platinum sponsorship of the <a href="https://www.pgcon.org/2016/">PGCon</a> annual event, and through our development of new PostgreSQL features.
+                                            </p>
+                                            <p>At Fujitsu, we freely share our know-how with the PostgreSQL community, and by opening up our knowledge base we can ensure that PostgreSQL is further strengthened, and continues to advance with Fujitsu as a partner.
+                                            </p>
+                                            <p>Fujitsu&#x27;s commitment to the PostgreSQL open source community:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <span> Supported the PostgreSQL open source community since 2004
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span> PGCon 2016 Platinum Sponsor
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span> Provides advice to enterprises using PostgreSQL
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span> Involved in development as well as advocacy
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span> Contributed a number of enterprise features to PostgreSQL
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <div class="row" >
+                        <div class="col-md-11;">
+                        <div id="feature" class="product-container city" style="margin:30px 0 0 0;">
+                            <div class="text_container" style="background-color: #f7f9f8">
+                                <table class="w3-table" >
+                                    <tr>
+                                        <th width="50%" style="background-color: #fff"></th>
+                                        <th width="25%" class="sand center-tb-with">Open Source PostgreSQL
+                                        </th>
+                                        <th class="color-khaki center-tb-with tb-padding">FUJITUS Enterprise Postgres
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-left first-row">
+                                            <p>Mission-critical database</p>
+                                        </td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Easy setup</p>
+                                        </td>
+                                        <td class="center-tb-with">
+                                            <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                        <td class="center-tb-with">
+                                            <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>One-click backup and recovery</p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Secure 256-bit transparent data encryption (PCI-DSS compliant)
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Data masking</p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Parallel scanning and aggregation</p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>In-Memory Column Store (IMCS) (*)</p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>WAL duplication
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>DB mirroring controller
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Enhanced Oracle® compatibility for simple migration
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Enhanced GUI for cluster management
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>System usage statistics</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Support service level
+                                            </p>
+                                        </td>
+                                        <td class="center-tb-with">
+                                            <p>24x7
+                                        </td>
+                                        <td class="center-tb-with">
+                                            <p>24x7
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <p>Fixed ongoing support costs</p>
+                                        </td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                        <td class="center-tb-with"> <img src="img/check-mark.svg" alt="check-mark" width="43px;" height="44px;" fill="#C8D241" ;>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-row">
+                                            <ul class="list-deco">
+                                                <li>
+                                                    <p>Enterprise-wide agreements, training and consulting</p>
+                                                </li>
+                                                <li>
+                                                    <p>Multi-year subscriptions</p>
+                                                </li>
+                                                <li>
+                                                    <p> Volume pricing</p>
+                                                </li>
+                                                <li>
+                                                    <p>Non-profit, charity, government, and educational pricing</p>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="center-tb-with">
+                                            <p>Please ask us
+                                                <br> +61 2 9452 9191 </p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                              <p class="first-row">* IMCS is a technology of Fujitsu Laboratories Ltd
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="footer-padding" href="term.html"> Terms of Use </a>
+                <a class="footer-padding"href="privacy.html">Privacy Policy </a>
+                <a class="footer-padding"href="about.html">About</a>
+                <a class="footer-padding" href="resources.html">Resources</a>
+            </p>
+        </div>
+        <div class="footer-right">
+           <p>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</p>
+        </div>
+    </footer>
+    <script>
+//     var select_bar=1;
+//   var psid_pos="relative";
+//     function openCity(evt, cityName) {
+//       var i;
+//       var x = document.getElementsByClassName("city");
+//       for (i = 0; i < x.length; i++) {
+//          x[i].style.display = "none";
+//       }
+//       var activebtn = document.getElementsByClassName("tablink");
+//       for (i = 0; i < x.length; i++) {
+//         activebtn[i].className = activebtn[i].className.replace("  tab-background", "");
+//       }
+//       document.getElementById(cityName).style.display = "block";
+//       evt.currentTarget.className += "  tab-background";
+//       if(cityName=="enterprise"){
+//         select_bar=1;
+//        if(psid_pos=="relative"){
+//             document.getElementById("enterprise_sidebar").style.position = "absolute";
+//             document.getElementById("enterprise_sidebar").style.top = "0px";
+//         }
+//         else {
+//             document.getElementById("enterprise_sidebar").style.position = "fixed";
+//             document.getElementById("enterprise_sidebar").style.top = "170px";
+//         }
+
+//       }
+//       else if(cityName=="sql"){
+//         select_bar=2;
+//    if(psid_pos=="relative"){
+//             document.getElementById("sql_sidebar").style.position = "absolute";
+//             document.getElementById("sql_sidebar").style.top = "0px";
+//         }
+//         else {
+//             document.getElementById("sql_sidebar").style.position = "fixed";
+//             document.getElementById("sql_sidebar").style.top = "170px";
+//         }
+//       }
+//       else {
+//         select_bar=3;
+//       }
+// }
+//     var mybtn = document.getElementsByClassName("tablink")[0];
+//     mybtn.click();
+
+//     $(function() {
+//         var $enterprise_sidebar = $("#enterprise_sidebar"),
+//             $sql_sidebar = $("#sql_sidebar"),
+//             $window = $(window),
+//             enterprise_offset = $enterprise_sidebar.offset(),
+//             topPadding = 80,
+//             offset_top = enterprise_offset.top;
+
+//         $window.scroll(function() {
+//             cur_scrollTop=$window.scrollTop();
+//             if(select_bar==1){
+//                 if(cur_scrollTop<offset_top-180){
+//                     document.getElementById("product-services_id").style.position = "relative";
+//                     document.getElementById("product-services_id").style.top = "0px";
+
+//                     document.getElementById("enterprise_sidebar").style.position = "absolute";
+//                     document.getElementById("enterprise_sidebar").style.top = "0px";
+
+//                     psid_pos="relative";
+
+//                 }
+//                 else {
+//                     document.getElementById("product-services_id").style.position = "fixed";
+//                     document.getElementById("product-services_id").style.top = "80px";
+//                     document.getElementById("enterprise_sidebar").style.position = "fixed";
+//                     document.getElementById("enterprise_sidebar").style.top = "170px";
+//                     psid_pos="fixed";
+//                 }
+//             }
+//             else if(select_bar==2){
+//                 if(cur_scrollTop<offset_top-180){
+//                     document.getElementById("product-services_id").style.position = "relative";
+//                     document.getElementById("product-services_id").style.top = "0px";
+
+//                     document.getElementById("sql_sidebar").style.position = "absolute";
+//                     document.getElementById("sql_sidebar").style.top = "0px";
+
+//                     psid_pos="relative";
+
+//                 }
+//                 else {
+//                     document.getElementById("product-services_id").style.position = "fixed";
+//                     document.getElementById("product-services_id").style.top = "80px";
+//                     document.getElementById("sql_sidebar").style.position = "fixed";
+//                     document.getElementById("sql_sidebar").style.top = "170px";
+
+//                     psid_pos="fixed"
+//                 }
+//             }
+//         });
+//     });
+    </script>
+
+<script>
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+                $('html').animate({ 'scrollTop': scrollToPosition }, 0);
+
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#buttons  a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#buttons a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+
+    });
+}
+
+
+
+</script>
+<!-- tab redirect  -->
+<script type="text/javascript">
+  //grabs the hash tag from the url
+  var hash = window.location.hash;
+  //checks whether or not the hash tag is set
+  if (hash != "") {
+    //removes all active classes from tabs
+    $(' li').each(function() {
+      $(this).removeClass('active');
+    });
+    $('#enterprise div').each(function() {
+      $(this).removeClass('active');
+    });
+    //this will add the active class on the hashtagged value
+    var link = "";
+    $('#tabs li').each(function() {
+      link = $(this).find('a').attr('href');
+      if (link == hash) {
+        $(this).addClass('active');
+      }
+    });
+    $('#sql div').each(function() {
+      link = $(this).attr('id');
+      if ('#'+link == hash) {
+        $(this).addClass('active');
+      }
+    });
+  }
+</script>
+
+</body>
+
+</html>

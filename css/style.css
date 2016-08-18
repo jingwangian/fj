@@ -1,36 +1,62 @@
 @font-face {
     font-family: "FujitsuSans";
-    src: url("../fonts/FujitsuSansRegular.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansRegular.ttf")format("truetype"),
+         url("../fonts/FujitsuSansRegular.woff")format("woff"),
+         url("../fonts/FujitsuSansRegular.eot")format("woff"),
+         url("../fonts/FujitsuSansRegular.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansRegular.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansBold";
-    src: url("../fonts/FujitsuSansBold.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansBold.ttf") format("truetype")，
+       url("../fonts/FujitsuSansBold.woff")format("woff"),
+         url("../fonts/FujitsuSansBold.eot")format("woff"),
+         url("../fonts/FujitsuSansBold.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansBold.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLight";
-    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype");
+    src: url("../fonts/FujitsuSansLight.ttf"), format("truetype"),
+         url("../fonts/FujitsuSansLight.woff")format("woff"),
+         url("../fonts/FujitsuSansLight.eot")format("woff"),
+         url("../fonts/FujitsuSansLight.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLight.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansLightIta";
-    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype");
+    src: url("../fonts/FujitsuSansLightIta.ttf") format("truetype"),
+    url("../fonts/FujitsuSansLightIta.woff")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot")format("woff"),
+         url("../fonts/FujitsuSansLightIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansLightIta.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMedium";
-    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMedium.ttf")format("truetype"),
+       url("../fonts/FujitsuSansMedium.woff")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot")format("woff"),
+         url("../fonts/FujitsuSansMedium.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMedium.svg#svgFontName') format('svg');
 }
 
 @font-face {
     font-family: "FujitsuSansMediumIta";
-    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype");
+    src: url("../fonts/FujitsuSansMediumIta.ttf")format("truetype"),
+           url("../fonts/FujitsuSansMediumIta.woff")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot")format("woff"),
+         url("../fonts/FujitsuSansMediumIta.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/FujitsuSansMediumIta.svg#svgFontName') format('svg');
 }
 
 html {
     font-family: 'FujitsuSans', 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+
 }
 
 body {
@@ -423,6 +449,13 @@ th {
     overflow: hidden;
 }
 
+
+@media screen and (max-width: 991px) {
+/*    .extra-long {line-height: 59px}*/
+}
+
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -456,6 +489,9 @@ body {
     }
 }
 
+
+
+
 input,
 button,
 select,
@@ -466,8 +502,7 @@ textarea {
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color:#000000;
 }
 
 a:hover,
@@ -593,6 +628,7 @@ h6 .small,
     font-weight: normal;
     line-height: 1;
     color: #999999;
+
 }
 
 h1,
@@ -648,7 +684,7 @@ h6 .small,
 h1,
 .h1 {
     font-size: 36px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
 }
 
 h2,
@@ -659,7 +695,8 @@ h2,
 h3,
 .h3 {
     font-size: 22px;
-    font-family: 'FujitsuSansBold', 'Roboto', sans-serif;
+  font-family: 'FujitsuSans', 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 h4,
@@ -678,9 +715,10 @@ h6,
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     font-size: 22px;
-    font-family:
+    font-family: 'FujitsuSans', 'Roboto', sans-serif;
+    color:#000000;
 }
 
 .lead {
@@ -949,7 +987,7 @@ blockquote:after {
 address {
     margin-bottom: 20px;
     font-style: normal;
-    line-height: 1.42857143;
+    line-height: 1.6;
 }
 
 code,
@@ -1011,7 +1049,7 @@ pre code {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .container {
         width: 750px;
     }
@@ -1021,7 +1059,7 @@ pre code {
     .container {
         width: 1000px;
     }
-}
+}*/
 
 @media (min-width: 1200px) {
     .container {
@@ -2152,7 +2190,7 @@ output {
 .form-control {
     display: block;
     width: 100%;
-    height: 34px;
+    height: 50px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -2214,7 +2252,8 @@ input[type="date"] {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 .radio,
@@ -2546,6 +2585,28 @@ select[multiple].input-lg {
     user-select: none;
 }
 
+.btn-tab {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
 .btn strong {
     padding: 3px;
 }
@@ -2645,15 +2706,19 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-    color: #ffffff;
+  color: #ffffff;
     background-color: transparent;
     border-color: #ffffff;
 }
 
+
 .btn-product {
-    color: #000000;
-    background-color: #ffffff;
+    background-color:transparent;
 }
+
+
+
+
 
 .btn-default:hover,
 .btn-default:focus,
@@ -2712,6 +2777,7 @@ fieldset[disabled] .btn-default.active {
     bottom: 0;
     left: 0;
 }
+
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2986,6 +3052,23 @@ fieldset[disabled] .btn-link:focus {
     border-radius: 20px;
 }
 
+.btn-lg-submit,
+.btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 4px;
+}
+
+
+
+
+
+.btn-product> .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.9;
+}
 .btn-sm,
 .btn-group-sm > .btn {
     padding: 5px 10px;
@@ -4785,6 +4868,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .visible-lg {
     display: none !important;
 }
+
+
+
+
 @media (max-width: 768px) {
     .visible-xs {
         display: block !important;
@@ -5269,7 +5356,7 @@ a.carousel-arrow-next {
 .bs-sidebar {
     margin-bottom: 50px;
 }
-<div class="col-sm-6 hidden-xs"> <img class="img-responsive" src="images/red.png" alt="..."> </div> .bs-sidebar.affix {
+ .bs-sidebar.affix {
     position: static;
 }
 @media (min-width: 992px) {
@@ -5566,7 +5653,7 @@ a.arrow-right {
     content: "";
     max-width: 314px;
     height: 467px;
-    position: relative;
+    position: absolute;
     display: table;
 }
 .card img {
@@ -5581,7 +5668,7 @@ a.arrow-right {
 }
 .card-text {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .card-text p {
     line-height: 1.7;
@@ -5726,46 +5813,10 @@ footer {
     line-height: 60px;
 }
 
-/*SERVICE  PAGE CSS */
-#sidebar ul {
-    background-color: #ffffff;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 357px;
-    line-height: 59px;
-}
-#sidebar li a {
-    display: block;
-    color: #000;
-    padding: 0px 0px 0px 16px;
-    text-decoration: none;
-    border-bottom: 1px solid #e3e3e3;
-}
-#sidebar li a.active {
-    background-color:#e3e3e3;
-    color: #000000;
-    border-left:2px solid #d30909;
-    ;
-}
-#sidebar li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-#sidebar {
-    float: left;
-    font-size: 20px;
-    padding-top: 20px;
-}
-@media screen and (max-width: 768px) {
-    #sidebar {
-        display: none;
-    }
-}
+
 .content {
     background-color: white;
-    padding-left: 25px;
-    max-width: 854px;
+    margin-left: 30px;
 }
 .content ul {
     list-style: none;
@@ -5774,12 +5825,16 @@ footer {
 }
 .content li {
     padding-left: 1em;
-    text-indent: -.7em;
+    text-indent: -.9em;
     list-style-type: square;
     font-size: 25px;
     color:red;
+    list-style-position:inside;
+
 }
-.content li p {
+.content li span {
+        font-size:22px;
+
     color:black;
 }
 .content li:before {
@@ -5788,19 +5843,20 @@ footer {
     /* or whatever color you prefer */
 }
 .content a {
-    font-weight: bolder;
-    color:black;
+    color:#4A4A4A;
+    text-decoration:underline;
 }
 .service-indicator {
-    border-left: 2px solid #711313;
+    border-left: 2px solid #ff0000;
     padding-left: 20px;
+    top:-100px;
 }
 .service-indicator h1 {
     color:#000000;
 }
 
 .solutions-list{
-    padding-left: 25px;
+    padding-left: 30px;
     margin-bottom: 45px;
 }
 .solutions-list ul {
@@ -5816,16 +5872,17 @@ footer {
     color:red;
 }
 .solutions-list img{
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 .solutions-list a{
     font-weight: bolder;
-    color: #ff0000;
 }
-.square p{
-    color:#333333;
-}
+.square {
+
+
+};
+
 
 hr.style-one {
     border: 0;
@@ -5834,10 +5891,24 @@ hr.style-one {
     border-bottom: 1px solid #C6C6C0;
     margin: 40px 0px 40px 0px;
 }
+
+.barLine {
+    border-left: 1px solid #b4b4ba;
+    float: left;
+    margin: 10px 0px 4px 0px;
+    height: 52px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .product-services {
     margin-bottom: 0;
-    background: #4b4b4b;
+    background: #dcdcd4 ;
     color: #ffffff;
+   /*     position: relative;
+    width: 100%;
+    z-index: 1;*/
+
 }
 .product-navbar {
     list-style-type:none;
@@ -5846,16 +5917,23 @@ hr.style-one {
     overflow:hidden;
 }
 .product-navbar li {
-    padding-left: 10px;
-    float:left
+    float:left;
+
+
 }
 .product-navbar li a {
-    padding:8px 16px
+    padding:18px 30px;
+    font-size:22px;
+
 }
 .product-navbar li a:hover {
-    color:#000;
-    background-color:#ccc
+    background-color: rgba(0,0,0,0.1);
+
 }
+.product-navbar li a:active {
+    color:#ff0000;
+}
+
 .product-navbar a {
     -webkit-transition:background-color .3s,
     color .15s,
@@ -5865,6 +5943,16 @@ hr.style-one {
     color .15s,
     box-shadow .3s,
     opacity 0.3s
+}
+/*#product-align h3{
+    padding-left: 90px;
+}*/
+
+@media screen and (max-width: 768px){
+    #product-align h3{
+    padding-left: 0;
+}
+
 }
 .text-black {
     color:#000000;
@@ -5876,33 +5964,62 @@ hr.style-one {
 .content-wrapper {
     height: auto;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .contact-form{
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    
+    
 }
 .forms{
-    max-width: 648px;
+    max-width:100%;
+    width:auto;    
+/*    max-width: 648px;*/
+    position: relative;
+    display:block;
+    margin-left:30px;
+    padding-right:0px;	 
+    padding: 0;
+    float:none;   
 }
 
 .address{
-    max-width: 565px;
-    margin-left: 120px;
-    background-color: #D0D2D3;
+    max-width: 480px;
+    background-color: #EDEDED;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+/*    position: relative;*/
+    display: table;
+/*    margin-left: 180px;*/
+
 }
 
 .contact-phone{
-    margin:20px 0px 50px 0px;
+    margin:30px;
+
 }
 .address-margin{
-    margin-bottom:70px;
-    line-height: 2;
+    margin-bottom:30px;
 
+}
+.contact-inner{
+    padding-left: 20px;
 }
 .train{
     padding-left: 25px;
+}
+
+
+.city-font{
+    font-size:22px;
+    font-weight: bold;
+}
+#office-font{
+    font-size: 28;
 }
 /*banner responsive*/
 @media screen and (max-width: 768px) {
@@ -5937,5 +6054,61 @@ hr.style-one {
     padding-bottom: 10px;
 }
 .shift {
-    padding-left: 20px;
+    padding-left: 23px;
 }
+
+
+.migration-content {
+    background-color: white;
+    margin-left: 30px;
+
+}
+
+.migration-content-scroll{
+    overflow-x: scroll;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.migration-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.migration-content li {
+    padding-left: 0.5em;
+    list-style-type: square;
+    font-size: 25px;
+    color:red;
+
+
+}
+.migration-content li span {
+        font-size:22px;
+
+    color:black;
+}
+.migration-content li:before {
+    list-style-type: square;
+    color: red;
+    /* or whatever color you prefer */
+}
+.migration-content a {
+    color:#4A4A4A;
+    text-decoration:underline;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .migration-content {
+    background-color: white;
+    margin-left:15px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+
+}
+

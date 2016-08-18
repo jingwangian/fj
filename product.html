@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/w3c.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/navi.css">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <link type="text/css" rel="stylesheet" href="css/support.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- FIXED SIDEBAR -->
+    <style type="text/css" media="screen">
+    .tb-padding {
+        vertical-align: middle;
+    }
+
+    .tab-background {
+        color: #ff0000;
+    }
+
+    #active {
+        color: #ff0000;
+    }
+    </style>
+    <link rel="icon" type="image/png" href="img/ico.png">
+    <title>Fujitsu PostgreSQL</title>
+</head>
+
+<body>
+    <div id="body_container">
+        <div class="top_nav" style="position:fixed; width=100%;">
+            <div class="top_nav_menu top_nav_left_log_part">
+                <a href="index.html" style="padding:auto;">
+                    <img id="img_nav_left_png" src="img/fujitsu.svg" alt="" style="height:80px; width=83px;padding-top:17px;padding-bottom:23px;">
+                </a>
+            </div>
+            <div id="top_nav_menu_middle_id" class="top_nav_menu top_nav_menu_middle">
+                <ul class="top_nav_ul">
+                    <li class="top_nav_li nav_menu"><a href="services.html" data-toggle="tooltip" data-placement="left" title="Database migration and consulting services">Services</a></li>
+                    <li class="top_nav_li nav_menu"><a href="support.html" data-toggle="tooltip" data-placement="left" title="24/7 and business hours support options for PostgreSQL users">Support</a></li>
+                    <li class="top_nav_li nav_menu"><a href="training.html" data-toggle="tooltip" data-placement="left" title="Training courses for DBAs and developers">Training</a></li>
+                    <li class="top_nav_li nav_menu nav_menu_active"><a href="product.html" data-toggle="tooltip" data-placement="left" title="FUJITSU Enterprise Postgres and PostgreSQL">Product</a></li>
+                    <li class="top_nav_li nav_menu"><a href="solutions.html" data-toggle="tooltip" data-placement="left" title="End-to-end PostgreSQL solutions">Solutions</a></li>
+                    <li class="top_nav_li nav_menu shadow-bot"><a href="contact.html" data-toggle="tooltip" data-placement="left">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div class="flex-container">
+ -->
+            <div class="top_nav_menu top_nav_contact_part ">
+                <ul class="top_nav_ul">
+                    <li id="top_nav_phone_log_li" class="top_nav_li">
+                        <a href="tel://+6194549191" style="padding-top:25px;">
+                            <img id="img_nav_phone_png" src="img/phone_icon.svg" alt="" style="height:100%; margin-left:20px; width:26px;height:30px;">
+                        </a>
+                    </li>
+                    <li id="top_nav_phone_number_li" class="top_nav_li  "><a href="tel://+6194549191" class="number">+61 2 9454 9191</a></li>
+                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top_nav_menu top_nav_right_log_part symbol">
+                <ul class="top_nav_ul">
+                    <li class="top_nav_li top_nav_right_log">
+                        <img id="img_nav_right_png" src="img/PostgreSQL.svg" alt="Contact-number" style="height:40px;width:175px;">
+                    </li>
+<!--                    <li class="hamberger_icon">
+                        <a href="javascript:void(0);" onclick="myFunction()" id="hamberger">&#9776;</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="top_nav" style="position:static;">
+        </div>
+        <div class="slider_container_new">
+            <img class="banner img-responsive" src="img/topimage4.jpg" style="width:100%">
+            <h1 class="banner_text">Product - Overview</h1>
+        </div>
+        <!--  -->
+            <div id="product-services_id" class="product-services">
+                <div class="text_container" style="background-color: #dcdcd4;">
+                    <div class="third">
+                        <div class="prodcut">
+                            <ul class="product-navbar" id="tab">
+                                <!-- tab  -->
+                                <!-- onclick="openCity(event,'enterprise') -->
+                                <!--  onclick="openCity(event,'sql') -->
+                                <!-- onclick="openCity(event,'feature')" -->
+                                <li> <a class="btn-tab btn-product tablink" id="active" href="product.html">FUJITSU Enterprise Postgres</a></li>
+                                <li class="barLine"></li>
+                                <li> <a class="btn-tab btn-product tablink" href="aboutsql.html">PostgreSQL</a></li>
+                                <li class="barLine"></li>
+                                <li> <a class="btn-tab btn-product tablink" href="featurescomparison.html">Feature Comparison</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- / .row -->
+                </div>
+                <!-- / .container -->
+            </div>
+            <!-- / .services -->
+            <div class="frame text_body">
+                <div id="enterprise" class="product-container city">
+                    <div class="content-wrapper" style="margin-top: 30px;">
+                            <div id="sidebar_container" class="col-md-3 col-sm-12 col-xs-12">
+                                <div id="enterprise_sidebar" class="sidebar" style="position:relative; top:0px;">
+                                    <ul id="sidebar_id">
+                                        <li><a class="active" href="product.html">Overview</a></li>
+                                        <li><a href="features.html">Features</a></li>
+                                        <li><a href="new.html">What's New?</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+                                    <div class="migration-content">
+                                    <h3 style="font-weight: bold">FUJITSU Enterprise Postgres is one of the fastest, most secure databases available today</h3>
+                                    <p>
+                                        FUJITSU Enterprise Postgres 9.5 is Fujitsu&#x27;s fastest database management system yet, combining the strengths of open source PostgreSQL with significantly improved performance, security, operability and usability. FUJITSU Enterprise Postgres is an enterprise-grade database that is compatible with PostgreSQL and offers considerable cost savings over other major vendor databases, without vendor lock-in.
+                                    </p>
+                                    <p>FUJITSU Enterprise Postgres is the evolution of Fujitsu&#x27;s extensive experience developing enterprise databases for over 35 years and of its contributions to and involvement in the PostgreSQL open source community.</p>
+                                    <p><a href="contact.html">Contact us</a> for more information on FUJITSU Enterprise Postgres or to discuss your database requirements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--  -->
+            <footer class="footer-distributed text_body">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a class="footer-padding" href="term.html"> Terms of Use </a>
+                        <a class="footer-padding" href="privacy.html">Privacy Policy </a>
+                        <a class="footer-padding" href="about.html">About</a>
+                        <a class="footer-padding" href="resources.html">Resources</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p>All Rights Reserved, Copyright &copy;2016 Fujitsu Australia Software Technology</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        //     var select_bar=1;
+        //      var psid_pos="relative";
+        //     function openCity(evt, cityName) {
+        //       var i;
+        //       var x = document.getElementsByClassName("city");
+        //       for (i = 0; i < x.length; i++) {
+        //          x[i].style.display = "none";
+        //       }
+        //       var activebtn = document.getElementsByClassName("tablink");
+        //       for (i = 0; i < x.length; i++) {
+        //         activebtn[i].className = activebtn[i].className.replace("  tab-background", "");
+        //       }
+        //       document.getElementById(cityName).style.display = "block";
+        //       evt.currentTarget.className += " tab-background";
+        //       if(cityName=="enterprise"){
+        //         select_bar=1;
+        //        if(psid_pos=="relative"){
+        //             document.getElementById("enterprise_sidebar").style.position = "absolute";
+        //             document.getElementById("enterprise_sidebar").style.top = "0px";
+        //         }
+        //         else {
+        //             document.getElementById("enterprise_sidebar").style.position = "fixed";
+        //             document.getElementById("enterprise_sidebar").style.top = "170px";
+        //         }
+
+        //       }
+        //       else if(cityName=="sql"){
+        //         select_bar=2;
+        //    if(psid_pos=="relative"){
+        //             document.getElementById("sql_sidebar").style.position = "absolute";
+        //             document.getElementById("sql_sidebar").style.top = "0px";
+        //         }
+        //         else {
+        //             document.getElementById("sql_sidebar").style.position = "fixed";
+        //             document.getElementById("sql_sidebar").style.top = "170px";
+        //         }
+        //       }
+        //       else {
+        //         select_bar=3;
+        //       }
+        // }
+        //     var mybtn = document.getElementsByClassName("tablink")[0];
+        //     mybtn.click();
+
+        //     $(function() {
+        //         var $enterprise_sidebar = $("#enterprise_sidebar"),
+        //             $sql_sidebar = $("#sql_sidebar"),
+        //             $window = $(window),
+        //             enterprise_offset = $enterprise_sidebar.offset(),
+        //             topPadding = 80,
+        //             offset_top = enterprise_offset.top;
+
+        //         $window.scroll(function() {
+        //             cur_scrollTop=$window.scrollTop();
+        //             if(select_bar==1){
+        //                 if(cur_scrollTop<offset_top-180){
+        //                     document.getElementById("product-services_id").style.position = "relative";
+        //                     document.getElementById("product-services_id").style.top = "0px";
+
+        //                     document.getElementById("enterprise_sidebar").style.position = "absolute";
+        //                     document.getElementById("enterprise_sidebar").style.top = "0px";
+
+        //                     psid_pos="relative";
+
+        //                 }
+        //                 else {
+        //                     document.getElementById("product-services_id").style.position = "fixed";
+        //                     document.getElementById("product-services_id").style.top = "80px";
+        //                     document.getElementById("enterprise_sidebar").style.position = "fixed";
+        //                     document.getElementById("enterprise_sidebar").style.top = "170px";
+        //                     psid_pos="fixed";
+        //                 }
+        //             }
+        // else if(select_bar==2){
+        //     if(cur_scrollTop<offset_top-180){
+        //         document.getElementById("product-services_id").style.position = "relative";
+        //         document.getElementById("product-services_id").style.top = "0px";
+
+        //         document.getElementById("sql_sidebar").style.position = "absolute";
+        //         document.getElementById("sql_sidebar").style.top = "0px";
+
+        //         psid_pos="relative";
+
+        //     }
+        //     else {
+        //         document.getElementById("product-services_id").style.position = "fixed";
+        //         document.getElementById("product-services_id").style.top = "80px";
+        //         document.getElementById("sql_sidebar").style.position = "fixed";
+        //         document.getElementById("sql_sidebar").style.top = "170px";
+
+        // psid_pos="fixed"
+        }
+        }
+        });
+        });
+        </script>
+        <script>
+        function myFunction() {
+            y = document.getElementById("top_nav_menu_middle_id");
+            y.classList.toggle("top_nav_menu_middle_display");
+        }
+        </script>
+        <script>
+        $(document).ready(function() {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function() {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 500, 'swing', function() {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+                $('html').animate({
+                    'scrollTop': scrollToPosition
+                }, 0);
+
+            });
+        });
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('#buttons  a').each(function() {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#buttons a').removeClass("active");
+                    currLink.addClass("active");
+                } else {
+                    currLink.removeClass("active");
+                }
+
+            });
+        }
+        </script>
+        <script type="text/javascript">
+        //   $(function() {
+        //       var $sidebar = $("#sidebar_id"),
+        //           $window = $(window),
+        //           offset = $sidebar.offset(),
+        //           topPadding = 80;
+
+        //       $window.scroll(function() {
+        //           cur_scrollTop = $window.scrollTop();
+        //           if (cur_scrollTop < offset.top - 100) {
+        //               document.getElementById("sidebar_id").style.position = "absolute";
+        //               document.getElementById("sidebar_id").style.top = "0px";
+        //           } else {
+
+        //               document.getElementById("sidebar_id").style.position = "fixed";
+        //               document.getElementById("sidebar_id").style.top = "100px";
+
+        //           }
+        //       });
+
+        //   });
+
+
+        //    var hash = window.location.hash;
+        // if (hash != "") {
+        //   $(' li').each(function() {
+        //     $(this).removeClass('active');
+        //   });
+        //   $('#enterprise div').each(function() {
+        //     $(this).removeClass('active');
+        //   });
+        //   var link = "";
+        //   $('#tabs li').each(function() {
+        //     link = $(this).find('a').attr('href');
+        //     if (link == hash) {
+        //       $(this).addClass('active');
+        //     }
+        //   });
+        //   $('#sql div').each(function() {
+        //     link = $(this).attr('id');
+        //     if ('#'+link == hash) {
+        //       $(this).addClass('active');
+        //     }
+        //   });
+        // }
+        </script>
+</body>
+
+</html>
