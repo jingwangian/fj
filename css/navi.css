@@ -9,9 +9,6 @@
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-bottom-color: #F7F9F8;
-<<<<<<< HEAD
-    
-=======
 }
 
 .top_nav_menu {
@@ -21,7 +18,6 @@
     float: left;
     height: 80px;
     vertical-align: top;
->>>>>>> web1
 }
 
 .top_nav_left_log_part {
@@ -44,12 +40,7 @@ ul.top_nav_ul {
 li.top_nav_li {
     float: left;
     height: 80px;
-<<<<<<< HEAD
-/*    border-style: solid;*/
-
-=======
     /*    border-style: solid;*/
->>>>>>> web1
 }
 
 li.top_nav_li a {
@@ -57,13 +48,8 @@ li.top_nav_li a {
     /*    color: white;*/
     text-align: center;
     padding-top: 25px;
-<<<<<<< HEAD
-/*    padding-left: 16px;*/
-/*    padding: 10px 16px;*/
-=======
     /*    padding-left: 16px;*/
     /*    padding: 10px 16px;*/
->>>>>>> web1
     text-decoration: none;
     transition: 0.3s;
 }
@@ -72,18 +58,10 @@ li.nav_menu:hover:not(.active) {
     background-color: #eeeeee;
 }
 
-<<<<<<< HEAD
-li.top_nav_li.nav_menu_link:hover:not(.active) {
-    background-color: #eeeeee;
-    border-bottom-color: red;
-    border-bottom-style: solid;
-    border-bottom:-width: 4px;
-=======
 li.nav_menu_active {
     border-bottom-color: #ff0000;
     border-bottom-style: solid;
     border-bottom-width: 4px;
->>>>>>> web1
 }
 
 li.top_nav_li a:hover:active {

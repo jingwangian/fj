@@ -63,12 +63,6 @@
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 
-<<<<<<< HEAD
-body{
-    margin:0px;
-/*    font-family: Verdana,sans-serif;*/
-    font-size: 15px;
-=======
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -240,7 +234,6 @@ a{
 }
 
 p{
->>>>>>> web1
     line-height: 1.5;
     margin: 0 0 15px;
     font-size: 22px;

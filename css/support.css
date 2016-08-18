@@ -1,12 +1,7 @@
 
 .support{
-<<<<<<< HEAD
-    padding:0 8px 0 30px;
-    margin-top: 30px;
-=======
     padding:0 8px 0 10px;
     margin-top: 0px;
->>>>>>> web1
     margin-bottom: 30px;
 }
 
@@ -17,14 +12,6 @@
 .plans-bkg{
     background-color: #f7f9f8;
     margin-bottom: 40px;
-<<<<<<< HEAD
-    padding-bottom: 230px;
-}
-
-.technical h3{
-    padding-top: 40px;
-    padding-bottom: 20px;
-=======
     padding-bottom: 30px;
 }
 
@@ -38,7 +25,6 @@
 /*    line-height: 1.5;
 */ margin-bottom: 0;
     margin-bottom: 15px;
->>>>>>> web1
 }
 
 /*table*/
@@ -46,23 +32,17 @@
     background-color: #dcdcd4;
     margin-right: 1px;
     border-right: 1px solid #ffffff;
-<<<<<<< HEAD
-=======
     border-radius: 4px 4px 0 0 ;
     height:45px;
     font-size: 22px;
->>>>>>> web1
 }
 
 .color-khaki{
     background-color: #cfcdb2;
-<<<<<<< HEAD
-=======
         border-radius: 4px 4px 0 0 ;
         height:45px;
             font-size: 22px;
 
->>>>>>> web1
 
 }
 .center-tb-with{
@@ -70,11 +50,7 @@
 }
 
 .center-tb-with img{
-<<<<<<< HEAD
-    margin-top: 20px;
-=======
     margin-top: 4px;
->>>>>>> web1
 }
 
 .center-tb{
@@ -90,8 +66,6 @@
     padding-right: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .first-row{
     padding: 20px;
 }
@@ -162,13 +136,10 @@ tr:nth-child(odd){background-color: #fdfdfd}
     margin-top: 30px; margin-bottom: 20px;
 }
 
->>>>>>> web1
 /*.contact {
     margin:40px 0 40px 0;
 }
 */
-<<<<<<< HEAD
-=======
 .contact-hyper{
     color:#ff0000;
 }
@@ -214,4 +185,3 @@ tr:nth-child(odd){background-color: #fdfdfd}
 
 
 
->>>>>>> web1
